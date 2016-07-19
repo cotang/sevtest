@@ -1,0 +1,109 @@
+.page-header{
+	font-family: @myriad-regular;
+	text-align: center;
+
+	
+	&__inner{
+		padding-top: 20px;
+		box-shadow: 7px 4px 5px 0px rgba(0, 0, 0, 0.11);
+		position: relative;
+		z-index: 2;
+	}
+	&__line{
+		padding-bottom: 30px;
+		&--first{
+			padding-bottom: 15px;
+			&:after{
+				content: '';
+				width: 100%;
+				height: 1px;
+				background-color: #000;
+				margin-right: 40px;
+				margin-left: 40px;
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__social{
+		margin-left: 20px;
+		i{
+			margin-right: 5px;
+			cursor: pointer;
+			opacity: 0.5;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+	&__cities{
+		text-align: left;
+		p{
+			margin: 0;
+		}
+	}
+	&__tels{
+		text-align: left;
+		p{
+			margin: 0;
+		}
+	}
+	&__emails{
+		text-align: left;
+		p{
+			margin: 0;
+		}
+	}
+	&__logo{
+		display: block;
+		margin-bottom: 15px;
+	}	
+	&__other-cities{
+		select{
+			border: none;
+			width: 220px;
+		}
+	}
+	&__search{
+		label{
+			position: relative;
+
+			input{
+				border: none;
+				outline: none;
+				border-bottom: 1px solid @text-gray; // fade(@text-gray, 50%);
+				width: 250px;
+
+				&:focus::-webkit-input-placeholder{
+					color: transparent;					
+				}				
+				&:focus::placeholder{
+					color: transparent;					
+				}
+				
+			}
+			i{
+				position: absolute;
+				right: 0;
+				opacity: 0.5;
+			}
+		}
+	}
+	&__nav{
+		margin-bottom: 15px;
+	}	
+}
+
+.nav{
+	&__list{
+		padding-left: 0;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		font-size: @font-size-big;
+	}
+	&__item{
+		list-style-type: none;
+	}
+}

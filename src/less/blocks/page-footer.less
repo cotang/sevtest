@@ -1,0 +1,72 @@
+.footer-buttons{
+	position: fixed;
+	bottom: 125px;
+	left: 0;
+	right: 0;
+
+	.container{
+		background-color: transparent;		
+	}		
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 70px;
+		padding-left: 70px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	&__button{
+		display: inline-block;
+		background-color: @red;
+		padding: 12px 70px;
+		text-transform: uppercase;
+		color: #fff;
+		&:hover{
+			color: #fff;			
+		}		
+	}	
+}
+.page-footer{
+	font-family: @myriad-regular;
+
+	&__contacts{
+		background-color: @bg-footer;
+		color: @text-gray;
+		padding-right: 70px;
+		padding-left: 70px;
+		padding-top: 100px;						
+		display: flex;
+		justify-content: space-between;
+	}
+	&__address{
+		p{
+			margin: 10px 0;
+		}
+	}
+
+	&__rss{
+		background-color: @pale-bg;
+		width: 175px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+	}
+	&__copyright{
+		background-color: @bg-footer;
+		color: @text-copyright;	
+		font-size: @font-size-small;
+		padding-right: 70px;
+		padding-left: 70px;	
+		padding-top: 20px;
+		padding-bottom: 15px;			
+	}
+	&__up{
+		display: block;
+		position: fixed;
+		bottom: 50px;
+		left: 50px;
+		background-image: url(../img/up.png);
+		width: 68px;
+		height: 68px;
+	}
+}
