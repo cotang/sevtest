@@ -16,18 +16,18 @@ $(document).ready(function(){
     });
 
 
-    // var changeStyle = $('.page-header');
-    // var top = $('.btn--top');
-    // function scroll() {
-    //     if ($(window).scrollTop() > 700) {
-    //         changeStyle.addClass('page-header--narrow');
-    //         top.addClass('show-top');
-    //     } else {
-    //         changeStyle.removeClass('page-header--narrow');
-    //         top.removeClass('show-top');
-    //     }
-    // }
-    // document.onscroll = scroll;
+
+    var buttons = $('.footer-buttons');
+    function scroll() {
+        if ($(window).scrollTop() > x) {
+            buttons.css("bottom", "0");
+        } else if ($(window).scrollTop() > x) {
+            buttons.css("bottom", "20px");
+        } else {
+            buttons.css("bottom", "125px");
+        }
+    }
+    document.onscroll = scroll;
 
 
 });
