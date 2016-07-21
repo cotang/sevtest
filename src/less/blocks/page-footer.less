@@ -1,9 +1,9 @@
 .footer-buttons{
 	position: fixed;
-	//bottom: 125px;
-	bottom: 20px;
+	bottom: auto;
 	left: 0;
 	right: 0;
+	z-index: 5;
 
 	.container{
 		background-color: transparent;		
@@ -11,10 +11,11 @@
 	&__wrapper{
 		display: flex;
 		justify-content: space-between;
-		padding-right: 70px;
-		padding-left: 70px;
-		padding-top: 40px;
-		padding-bottom: 20px;
+		padding: 0 70px;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        //display: block;
+			//padding: 0;
+	    }		
 	}
 	&__button{
 		display: inline-block;
@@ -22,9 +23,19 @@
 		padding: 12px 70px;
 		text-transform: uppercase;
 		color: #fff;
+
 		&:hover, &:focus, &:visited{
-			color: #fff;			
-		}		
+			color: #fff;	
+		}
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        padding: 12px 30px;
+	    }	
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        padding: 12px 15px;
+	    }	    	
+	    @media only screen and (max-width:  @screen-xs-max) {
+	        display: none;
+	    }
 	}	
 }
 .page-footer{
@@ -38,6 +49,14 @@
 		padding-top: 100px;						
 		display: flex;
 		justify-content: space-between;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        display: block;
+	        text-align: center;
+	    }	
+	    @media only screen and (max-width:  @screen-xs-max) {
+	        padding: 15px 15px 0;
+
+	    }		    	
 	}
 	&__address{
 		p{
@@ -51,6 +70,9 @@
 		height: 60px;
 		line-height: 60px;
 		text-align: center;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        margin: 0 auto;
+	    }		
 	}
 	&__copyright{
 		background-color: @bg-footer;
@@ -59,7 +81,10 @@
 		padding-right: 70px;
 		padding-left: 70px;	
 		padding-top: 20px;
-		padding-bottom: 15px;			
+		padding-bottom: 15px;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        padding: 15px;
+	    }					
 	}
 	&__up{
 		display: block;
@@ -69,5 +94,9 @@
 		background-image: url(../img/up.png);
 		width: 68px;
 		height: 68px;
+	    @media only screen and (max-width:  @screen-sm-max) {
+			bottom: 30px;
+			left: 30px;
+	    }
 	}
 }

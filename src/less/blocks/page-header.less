@@ -21,8 +21,11 @@
 				margin-right: 40px;
 				margin-left: 40px;
 				margin-top: 15px;
+			    @media only screen and (max-width:  @screen-lg-max) {
+			        display: none;
+			    }					
 			}
-		}
+		}		
 	}
 
 	&__social{
@@ -35,34 +38,98 @@
 				opacity: 1;
 			}
 		}
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        margin-bottom: 10px;
+	    }		
 	}
-	&__cities{
+	&__shipping{
+
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        margin-left: 0;
+	        margin-bottom: 10px;
+	    }
+	    @media only screen and (max-width:  @screen-sm-max) {
+			font-size: @font-size-small;
+	    }	    		
+	}
+
+	&__address{
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        padding: 0 50px;
+	        margin-bottom: 20px;
+	    }			
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        display: flex;
+	        padding: 0;
+	    }		
+	}
+	&__address-item{
 		text-align: left;
+		display: flex;
+		justify-content: space-between;	
+
+
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        text-align: center;
+	        margin-left: 0;
+	        margin-right: 0;
+	    }
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        display: block;
+	        width: 50%;
+			font-size: @font-size-small;
+	    }
 		p{
 			margin: 0;
 		}
 	}
-	&__tels{
-		text-align: left;
-		p{
-			margin: 0;
-		}
+	&__city{
+		min-width: 140px;
+	}	
+	&__flags{
+		text-align: center;
+
+
 	}
-	&__emails{
-		text-align: left;
-		p{
-			margin: 0;
+	&__flag-item{
+		width: 32px;
+		height: 21px;
+		display: inline-block;
+		border: 1px solid @text-gray;
+		background-size: 100% 100%;
+
+
+		&:first-child{
+			background-image: url(../img/flag-ru.png);
 		}
+		&:last-child{
+			background-image: url(../img/flag-en.png);
+		}		
 	}
+
+
 	&__logo{
 		display: block;
 		margin-bottom: 15px;
+
+	    @media only screen and (max-width:  @screen-sm-max) {
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+	    }		
 	}	
 	&__other-cities{
 		select{
 			border: none;
 			width: 220px;
 		}
+	    @media only screen and (max-width:  @screen-lg-max) {
+	        margin-bottom: 20px;
+	    }		
+	    @media only screen and (max-width:  @screen-sm-max) {
+			font-size: @font-size-small;
+	    }		
 	}
 	&__search{
 		label{
@@ -102,9 +169,23 @@
 		display: flex;
 		justify-content: space-around;
 		font-size: @font-size-big;
+	    @media only screen and (max-width:  @screen-sm-max) {
+			display: block;
+	    }		
 	}
 	&__item{
 		list-style-type: none;
+
+	    @media only screen and (max-width:  @screen-sm-max) {
+			display: block;
+			padding-top: 10px;			
+			padding-bottom: 10px;
+			border-top: 1px solid @text-gray;
+		    &:last-child{
+				border-bottom: 1px solid @text-gray;		    	
+		    }					
+	    }	
+	
 	}
 	&__link--active{
 		text-decoration: underline;

@@ -38,18 +38,18 @@
 
 		input{
 			display: none;
-			&:checked{
-				~ .services__label ~ .services__content{
-					display: block;
-					//height: auto;
-				}
-				~ .services__label .fa-chevron-up{
-					display: block;
-				}
-				~ .services__label .fa-chevron-down{
-					display: none;
-				}				
-			}
+			// &:checked{
+			// 	~ .services__label ~ .services__content{
+			// 		display: block;
+			// 		//height: auto;
+			// 	}
+			// 	~ .services__label .fa-chevron-up{
+			// 		display: block;
+			// 	}
+			// 	~ .services__label .fa-chevron-down{
+			// 		display: none;
+			// 	}				
+			// }
 		}
 	}
 	&__link-main{
@@ -76,16 +76,13 @@
 		position: absolute;
 		right: 10px;
 		top: 15px;
-		.fa-chevron-up{
-			display: none;
-		}
+		// .fa-chevron-up{
+		// 	display: none;
+		// }
 	}
 	&__content{
 		padding: 5px 10px 5px 20px;
 		display: none;
-		//height: 0px;
-		//transition: all .5s ease-out;
-		//overflow: hidden;
 	}
 }
 
