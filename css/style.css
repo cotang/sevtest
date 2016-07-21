@@ -3382,28 +3382,40 @@ img {
 	opacity: 1;
 }
 
-.page-header__cities {
+.page-header__address-item {
 	text-align: left;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
-.page-header__cities p {
+.page-header__address-item p {
 	margin: 0;
 }
 
-.page-header__tels {
-	text-align: left;
+.page-header__city {
+	min-width: 140px;
 }
 
-.page-header__tels p {
-	margin: 0;
+.page-header__flags {
+	text-align: center;
 }
 
-.page-header__emails {
-	text-align: left;
+.page-header__flag-item {
+	width: 32px;
+	height: 21px;
+	display: inline-block;
+	border: 1px solid gray;
+	background-size: 100% 100%;
 }
 
-.page-header__emails p {
-	margin: 0;
+.page-header__flag-item:first-child {
+	background-image: url(../img/flag-ru.png);
+}
+
+.page-header__flag-item:last-child {
+	background-image: url(../img/flag-en.png);
 }
 
 .page-header__logo {
@@ -3506,18 +3518,6 @@ img {
 	display: none;
 }
 
-.services__item input:checked ~ .services__label ~ .services__content {
-	display: block;
-}
-
-.services__item input:checked ~ .services__label .fa-chevron-up {
-	display: block;
-}
-
-.services__item input:checked ~ .services__label .fa-chevron-down {
-	display: none;
-}
-
 .services__link-main {
 	font-weight: 700;
 	display: inline-block;
@@ -3545,10 +3545,6 @@ img {
 	position: absolute;
 	right: 10px;
 	top: 15px;
-}
-
-.services__label .fa-chevron-up {
-	display: none;
 }
 
 .services__content {
@@ -3729,7 +3725,9 @@ img {
 	color: #fff;
 }
 
-.what-we-do__button:hover {
+.what-we-do__button:hover,
+.what-we-do__button:focus,
+.what-we-do__button:visited {
 	color: #fff;
 }
 
@@ -3824,7 +3822,9 @@ img {
 	color: #fff;
 }
 
-.how-we-work__button:hover {
+.how-we-work__button:hover,
+.how-we-work__button:focus,
+.how-we-work__button:visited {
 	color: #fff;
 }
 
@@ -3974,9 +3974,10 @@ img {
 
 .footer-buttons {
 	position: fixed;
-	bottom: 20px;
+	bottom: auto;
 	left: 0;
 	right: 0;
+	z-index: 5;
 }
 
 .footer-buttons .container {
@@ -3988,10 +3989,7 @@ img {
 	display: flex;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding-right: 70px;
-	padding-left: 70px;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding: 0 70px;
 }
 
 .footer-buttons__button {
@@ -4370,7 +4368,7 @@ img {
 }
 
 .col-xs-offset-5 {
-	margin-left: 67.5%;
+	margin-left: 62.5%;
 }
 
 .col-xs-offset-6 {
@@ -4500,9 +4498,9 @@ img {
 }
 
 .col-sm-5 {
-	-ms-flex-preferred-size: 67.5%;
-	flex-basis: 67.5%;
-	max-width: 67.5%;
+	-ms-flex-preferred-size: 62.5%;
+	flex-basis: 62.5%;
+	max-width: 62.5%;
 }
 
 .col-sm-6 {
@@ -4540,7 +4538,7 @@ img {
 }
 
 .col-sm-offset-5 {
-	margin-left: 67.5%;
+	margin-left: 62.5%;
 }
 
 .col-sm-offset-6 {
@@ -4672,9 +4670,9 @@ img {
 }
 
 .col-md-5 {
-	-ms-flex-preferred-size: 67.5%;
-	flex-basis: 67.5%;
-	max-width: 67.5%;
+	-ms-flex-preferred-size: 62.5%;
+	flex-basis: 62.5%;
+	max-width: 62.5%;
 }
 
 .col-md-6 {
@@ -4712,7 +4710,7 @@ img {
 }
 
 .col-md-offset-5 {
-	margin-left: 67.5%;
+	margin-left: 62.5%;
 }
 
 .col-md-offset-6 {
@@ -4781,7 +4779,7 @@ img {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1296px) {
 
 .container {
 	width: 1276px; /* !!! */
@@ -4844,9 +4842,9 @@ img {
 }
 
 .col-lg-5 {
-	-ms-flex-preferred-size: 67.5%;
-	flex-basis: 67.5%;
-	max-width: 67.5%;
+	-ms-flex-preferred-size: 62.5%;
+	flex-basis: 62.5%;
+	max-width: 62.5%;
 }
 
 .col-lg-6 {
@@ -4884,7 +4882,7 @@ img {
 }
 
 .col-lg-offset-5 {
-	margin-left: 67.5%;
+	margin-left: 62.5%;
 }
 
 .col-lg-offset-6 {
@@ -4949,6 +4947,219 @@ img {
 .last-lg {
 	-ms-flex-order: 1;
 	order: 1;
+}
+
+}
+
+@media only screen and (max-width: 1297px) {
+
+.page-header__line--first:after {
+	display: none;
+}
+
+.page-header__social {
+	margin-bottom: 10px;
+}
+
+.page-header__shipping {
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.page-header__address {
+	padding: 0 50px;
+	margin-bottom: 20px;
+}
+
+.page-header__address-item {
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.page-header__other-cities {
+	margin-bottom: 20px;
+}
+
+.footer-buttons__button {
+	padding: 12px 30px;
+}
+
+}
+
+@media only screen and (max-width: 769px) {
+
+.page-header__shipping {
+	font-size: 13px;
+}
+
+.page-header__address {
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0;
+}
+
+.page-header__address-item {
+	display: block;
+	width: 50%;
+	font-size: 13px;
+}
+
+.page-header__logo {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.page-header__other-cities {
+	font-size: 13px;
+}
+
+.nav__list {
+	display: block;
+}
+
+.nav__item {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid gray;
+}
+
+.nav__item:last-child {
+	border-bottom: 1px solid gray;
+}
+
+.main {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.what-we-do {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.what-we-do__list {
+	display: block;
+}
+
+.what-we-do__item {
+	width: 100%;
+}
+
+.how-we-work {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.how-we-work__description {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.how-we-work__list {
+	display: block;
+}
+
+.how-we-work__item {
+	width: 100%;
+}
+
+.how-we-work__item p {
+	padding: 0 20px;
+}
+
+.how-we-work__questions {
+	display: block;
+}
+
+.how-we-work__button {
+	margin-top: 20px;
+}
+
+.advantages {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.advantages__list {
+	display: block;
+}
+
+.advantages__item {
+	width: 100%;
+}
+
+.work-customs-union {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.work-customs-union__item {
+	font-size: 16px;
+}
+
+.work-customs-union__item:before {
+	height: 15px;
+	width: 15px;
+}
+
+.partners__title {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.partners__list {
+	display: block;
+	margin: 10px;
+	text-align: center;
+}
+
+.partners__img {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.footer-buttons__button {
+	padding: 12px 15px;
+}
+
+.page-footer__contacts {
+	display: block;
+	text-align: center;
+}
+
+.page-footer__rss {
+	margin: 0 auto;
+}
+
+.page-footer__copyright {
+	padding: 15px;
+}
+
+.page-footer__up {
+	bottom: 30px;
+	left: 30px;
+}
+
+.page {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+}
+
+@media only screen and (max-width: 481px) {
+
+.footer-buttons__button {
+	display: none;
+}
+
+.page-footer__contacts {
+	padding: 15px 15px 0;
 }
 
 }
