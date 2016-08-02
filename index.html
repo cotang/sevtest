@@ -7,14 +7,15 @@
 <!-- <meta name="viewport" content="width=1000"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link href="css/style.min.css" rel="stylesheet" media="screen">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
 
-<script src="js/modernizr-custom.js"></script>
+<!-- <script src="js/modernizr-custom.js"></script> -->
 
 <!--
 <link href="/favicon.ico" rel="icon" type="image/x-icon">
@@ -81,13 +82,29 @@
 
     <div class="row  page-header__line">
       <div class="col-xs-8 col-lg-2  col-lg-offset-4">
-          <div class="page-header__other-cities">
-            <select name="other-cities" id="other-cities">
-              <option disabled selected>Смотреть другие города</option>
-              <option value="Новосибирск">Новосибирск</option>
-              <option value="Краснодар">Краснодар</option>
-              <option value="Нижний Новгород">Нижний Новгород</option>
-            </select>
+          <div class="page-header__other-cities  other-cities">
+            <div class="other-cities__inner">
+              <span>Смотреть другие города</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <ul class="other-cities__list">
+                <li class="other-cities__item"><a href="">Москва</a></li>
+                <li class="other-cities__item"><a href="">Санкт-Петербург</a></li>
+                <li class="other-cities__item"><a href="">Екатеринбург</a></li>
+                <li class="other-cities__item"><a href="">Новосибирск</a></li>
+                <li class="other-cities__item"><a href="">Краснодар</a></li>
+                <li class="other-cities__item"><a href="">Ростов-на-Дону</a></li>
+                <li class="other-cities__item"><a href="">Нижний Новгород</a></li>
+                <li class="other-cities__item"><a href="">Ставрополь</a></li>
+                <li class="other-cities__item"><a href="">Сочи</a></li>
+                <li class="other-cities__item"><a href="">Челябинск</a></li>
+                <li class="other-cities__item"><a href="">Мурманск</a></li>
+                <li class="other-cities__item"><a href="">Тула</a></li>
+                <li class="other-cities__item"><a href="">Волгоград</a></li>
+                <li class="other-cities__item"><a href="">Саратов</a></li>
+                <li class="other-cities__item"><a href="">Тольятти</a></li>
+                <li class="other-cities__item"><a href="">Минск</a></li>
+                <li class="other-cities__item"><a href="">Рига</a></li>
+              </ul>
+              </div>
           </div>
       </div>
       <div class="col-xs-8 col-lg-2">
