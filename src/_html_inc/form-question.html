@@ -1,0 +1,46 @@
+<form id="form-question" class="form-question" action="">
+  <a class="form-question__close" href="#">Закрыть</a>
+  <h3 class="form-question__title">Оставить заявку</h3>
+  <input class="form-question__input" type="text" name="Имя" placeholder="Имя" required>
+  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-question__input" type="email" name="Email" placeholder="Email*" required>
+  <div class="form-question__country">
+    <input class="form-question__input" type="text" name="Страна" placeholder="Страна*" required>
+    <ul class="form-question__country-list">
+      <li class="bold">Россия</li>
+      <li class="bold">Беларусь</li>
+      <li class="bold">Казахстан</li> 
+      <li>Украина</li>
+      <li>Азербайджан</li>
+      <li>Армения</li>    
+      <li>Грузия</li>
+      <li>Молдавия</li>
+      <li>Узбекистан</li>  
+      <li>Киргизия</li>
+      <li>Таджикистан</li>
+      <li>Туркменистан</li> 
+    </ul> 
+  </div>
+  <div class="form-question__region">
+    <input class="form-question__input" type="text" name="Регион" placeholder="Регион*" required>
+    <ul class="form-question__region-list">
+      <li>Санкт-Петербург и Ленинградская область</li>
+      <li>Москва и Московская область</li>
+      <li>Новгородская область</li> 
+      <li>Псковская область</li>
+      <li>Республика Карелия</li>
+      <li>Мурманская область</li>    
+      <li>Калининградская область</li>
+      <li>Вологодская область</li>
+      <li>Тверская область</li>
+    </ul> 
+  </div>
+  <textarea class="form-question__textarea" name="Вопрос" placeholder="Ваш вопрос" required></textarea>
+  <div class="form-question__captcha">
+    <div class="form-question__captcha-img">
+      <img src="../img/captcha.jpg" alt="">
+    </div>
+    <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  </div>
+  <button class="form-question__btn" type="submit">Спросить</button>
+</form>

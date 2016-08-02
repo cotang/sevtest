@@ -88,13 +88,13 @@
 	}	
 	&__flags{
 		text-align: center;
-
-
+		margin-top: 5px;
 	}
 	&__flag-item{
-		width: 32px;
-		height: 21px;
+		width: 50px;
+		height: 30px;
 		display: inline-block;
+		vertical-align: bottom;
 		border: 1px solid @text-gray;
 		background-size: 100% 100%;
 
@@ -190,5 +190,35 @@
 	&__link--active{
 		text-decoration: underline;
 		font-weight: 700;
+	}
+}
+.other-cities{
+
+	&__inner{
+		display: inline-block;
+		position: relative;
+		cursor: pointer;		
+	}
+	i{
+		margin-left: 20px;
+	}
+	&__list{
+		display: none;
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		background-color: #fff;
+		border: 1px solid @text-gray;
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+		z-index: 6;
+	}
+	&__item{
+		padding: 5px 25px;
+		border-bottom: 1px solid @text-gray;
+		&:last-child{
+			border-bottom: none;
+		}
 	}
 }
