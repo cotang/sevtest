@@ -14,23 +14,11 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <!-- <script src="js/modernizr-custom.js"></script> -->
-
 <!--
 <link href="/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="icon" sizes="192x192" href="img/favicons/favicon-192x192.png">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-57x57.png">
-<meta name="theme-color" content="#2b2f38">
-<meta name="msapplication-TileColor" content="#2b2f38">
-<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
 -->
 
 </head>
@@ -73,6 +61,7 @@
       </div>   
       <div class="col-xs-8 col-lg-1">  
         <div class="page-header__flags">
+          <a href="" class="page-header__flag-item  page-header__flag-item--rss"></a>
           <a href="" class="page-header__flag-item"></a>
           <a href="" class="page-header__flag-item"></a>          
         </div>
@@ -133,12 +122,12 @@
       <div class="col-xs-8">
           <nav class="page-header__nav  nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link  nav__link--active" href="page.html">О компании</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Новости</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Сертификация в деталях</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Часто задаваемые вопросы</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Благодарственные письма</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link  nav__link--active" href="index.html">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-news.html">Новости</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-glossary.html">Сертификация в деталях</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-faq.html">Часто задаваемые вопросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-reviews.html">Благодарственные письма</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-contacts.html">Контакты</a></li>
             </ul>
           </nav>
       </div>
@@ -265,62 +254,51 @@
         </div>
 
         <div class="col-xs-8  col-sm-5  col-md-6">
-            <main class="main">
+            <main class="main  page page--news">
 				
-				<section class="page">
-					<div class="page__breadcrumbs">
-						<a href="">Севтест - центр по сертификации</a>&gt;<span>Новости</span>
-					</div>
-					<h1 class="page__title">Новости</h1>
-					<div class="page__items">
-						<div class="item">
-							<h2 class="item__title"><a href="">Со 2 сентября 2016 года будет осуществлено обнуление ставки ввозной таможенной пошлины на некоторые виды продукции</a></h2>
-							<div class="item__date">Опубликовано <span>29.07.2016</span></div>
-							<div class="item__content">
-								<p>На заседании Совета Евразийской экономической комиссии, которое состоялось 13 июля текущего года,  принят ряд решений, касающихся обнуления ставки ввозной таможенной пошлины на следующие категории товаров:</p>
-								<ul>
-									<li>Комплектующие, предназначенные для автотранспорта с двигателями, использующими природный газ. Ставка ввозной таможенной пошлины будет обнулена для редукционных и обратных клапанов, арматуры, а также отдельных видов газовых баллонов, предназначенных для установки на автомобили. Касательно арматуры и клапанов пошлина обнуляются до конца 2020 года, касательно емкостей для природного газа – до конца 2016 года;</li>
-									<li>Фторид алюминия. Ставка ввозной таможенной пошлины будет обнулена до конца 2020 года. Данная мера позволит обеспечить фторидом алюминия всех российских предприятий алюминиевой промышленности;
-									<li>Электромашины , в отношении которых ставка ввозной пошлины будет снижена до сентября 2017 года.</li>Отметим, что соответствующее решение Совета ЕЭК не затрагивает автомобили с гибридным двигателем, а также «плагин-гибридные» автомобили. Согласно имеющейся информации, ставка ввозной таможенной пошлины на электромобили легковые снижается с 17% до 0%, а на грузовые автомобили с массой до 5 тонн – c 15% до 5%.</li>
-								</ul>
-								<p>Все принятые решения вступают в силу со 2го сентября текущего года.</p>
-							</div>
-						</div>
-						<div class="item">
-							<h2 class="item__title"><a href="">На пассажирский и грузовой транспорт СБКТС оформляется неправильно</a></h2>
-							<div class="item__date">Опубликовано <span>29.07.2016</span></div>
-							<div class="item__content">
-								<p>17 июля появилась информация о том, что Росстандарт выявил множественные нарушения при составлении СБКТС (свидетельства безопасности конструкции транспортного средства). В результате Росстандарт сделал официальное заявление в адрес исследовательских лабораторий, где проводится тестирование колесного транспорта на соответствие профильному техрагеламенту, с призывом верно заполнять все пункты бланка будущего документа.</p>
-							   	<p>Проведенная проверка показала, что наибольшее число нарушений приходится на пункт «тип и марка двигателя внутреннего сгорания» для средств транспорта из категорий М (пассажирский транспорт) и N (грузовой транспорт). Большинство в этой графе пишут «бензиновый, четырехтактный». В то время как типом двигателя является информация о транспорте как единице, выпущенной одним производителем, а марка — название, которое значится на изделии. Понятно, что запись «бензиновый, четырехтактный» не является корректным ответом на поставленные вопросы.</p>
-							    <p>Росстандарт заявил, что, если подобные ошибки в составлении СБКТС продолжат появляться, он будет вынужден передать сведения об этом в МВД России, Росакредитацию и Федеральную таможенную службу.</p>
-							</div>
-						</div>
-						<div class="item">
-							<h2 class="item__title"><a href="">Внесен ряд поправок в техрегламент на упаковку</a></h2>
-							<div class="item__date">Опубликовано <span>29.07.2016</span></div>
-							<div class="item__content">
-								<p>На очередном, 25 по счету, заседании Евразийской Экономической Комиссии был отредактирован технический регламент на безопасность упаковки. Изменениям подверглись государственные и межгосударственные нормативы, как обязательные, так и добровольные к исполнению, а также способы проверки соответствия продукции требованиями техрегламента. Например:</p>
-								<ul>
-									<li>за исполнение ГОСТов на защищенную от вскрытия детьми и на отработанную упаковки теперь отвечает не Республика Казахстан, а Россия;</li>
-									<li>изменены названия некоторых стандартов: ГОСТ, который ранее именовался «Пачки из картона, бумаги и комбинированных материалов», теперь будет называться «Упаковка потребительская»;
-									изменены условия разработки целого ряда ГОСТов;</li>
-									<li>терминология, используемая в текстах некоторых стандартов, заменена на более актуальную (например, Таможенный Союз был заменен Евразийским Экономическим Союзом);</li>
-									<li>даты окончания работ над рядом ГОСТов перенесены с 2015 года на 2016 и 2017 годы.</li>
-								</ul>
-								<p>В новом виде технический регламент на безопасность упаковки заработает с 15 августа настоящего года.</p>
-							</div>
-						</div>
-						<div class="item">
-							<h2 class="item__title"><a href="">В сентябре ожидается утверждение техрегламента на рыбу</a></h2>
-							<div class="item__date">Опубликовано <span>29.07.2016</span></div>
-							<div class="item__content">
-								<p>Технический регламент на рыбу должен быть окончательно утвержден в сентябре настоящего года — об этом информирует сайт Евразийской Экономической Комиссии. ЕЭК является одним из участников обсуждений данного техрегламента наряду с Росрыболовством, Министерством сельского хозяйства и другими организациями, занимающимися вопросами рыбного хозяйства.</p>
-								<p>Сам технический регламент на рыбу был представлен на обсуждение еще в 2013 году, и с тех пор дебаты вокруг него не утихают. Главным вопросом, вызвавшим резонанс, является ветеринарный контроль выловленной рыбы на предмет паразитарных заражений (рыба особенно подвержена воздействию паразитов): наличия гельминтозов, бактериальных инфекций и т. д., который потенциально могут передаваться человеку. Также важным вопросом является экологический надзор за состоянием водоемов, в которых рыба была выловлена.</p>
-								<p>Теперь же все стороны наконец высказали общую надежду на то, что технический регламент на рыбу будет наконец принят. Последним этапом его обсуждений должно стать мнение Роспотребнадзора и Министерства экономического развития.</p>							
-							</div>
-						</div>
-					</div>							
+				<section class="breadcrumbs">
+					<a href="index.html">Севтест - центр по сертификации</a>&gt;<span>Новости</span>
 				</section>
+				<h1 class="page__title">Новости</h1>
+				
+				<div class="page__items">
+					<section class="item">
+						<h2 class="item__title"><a href="single-news.html">Со 2 сентября 2016 года будет осуществлено обнуление ставки ввозной таможенной пошлины на некоторые виды продукции</a></h2>
+						<div class="item__date">Опубликовано <span>29.07.2016</span></div>
+						<div class="item__content">
+							<p>На заседании Совета Евразийской экономической комиссии, которое состоялось 13 июля текущего года,  принят ряд решений, касающихся обнуления ставки ввозной таможенной пошлины на следующие категории товаров: <a class="item__more" href="single-news.html">Читать далее...</a></p>
+						</div>
+					</section>
+					<section class="item">
+						<h2 class="item__title"><a href="single-news.html">На пассажирский и грузовой транспорт СБКТС оформляется неправильно</a></h2>
+						<div class="item__date">Опубликовано <span>29.07.2016</span></div>
+						<div class="item__content">
+							<p>17 июля появилась информация о том, что Росстандарт выявил множественные нарушения при составлении СБКТС (свидетельства безопасности конструкции транспортного средства). В результате Росстандарт сделал официальное заявление в адрес исследовательских лабораторий, где проводится тестирование колесного транспорта на соответствие профильному техрагеламенту, с призывом верно заполнять все пункты бланка будущего документа. <a class="item__more" href="single-news.html">Читать далее...</a></p>
+						</div>
+					</section>
+					<section class="item">
+						<h2 class="item__title"><a href="single-news.html">Внесен ряд поправок в техрегламент на упаковку</a></h2>
+						<div class="item__date">Опубликовано <span>29.07.2016</span></div>
+						<div class="item__content">
+							<p>На очередном, 25 по счету, заседании Евразийской Экономической Комиссии был отредактирован технический регламент на безопасность упаковки. Изменениям подверглись государственные и межгосударственные нормативы, как обязательные, так и добровольные к исполнению, а также способы проверки соответствия продукции требованиями техрегламента. Например: <a class="item__more" href="single-news.html">Читать далее...</a></p>
+						</div>
+					</section>
+					<section class="item">
+						<h2 class="item__title"><a href="single-news.html">В сентябре ожидается утверждение техрегламента на рыбу</a></h2>
+						<div class="item__date">Опубликовано <span>29.07.2016</span></div>
+						<div class="item__content">
+							<p>Технический регламент на рыбу должен быть окончательно утвержден в сентябре настоящего года — об этом информирует сайт Евразийской Экономической Комиссии. ЕЭК является одним из участников обсуждений данного техрегламента наряду с Росрыболовством, Министерством сельского хозяйства и другими организациями, занимающимися вопросами рыбного хозяйства. <a class="item__more" href="single-news.html">Читать далее...</a></p>
+						</div>
+					</section>
+				</div>	
+				
+				<section class="pagination">
+					<span>Страницы:</span>
+					<a class="pagination__number pagination__number--current" href="">1</a>
+					<a class="pagination__number" href="">2</a>
+					<a class="pagination__number" href="">3</a>
+					<a class="pagination__number" href="">4</a>
+				</section>										
             
             </main>
         </div>      
@@ -334,9 +312,9 @@
     <div class="row">
       <div class="col-xs-8">
         <div class="footer-buttons__wrapper">
-          <a class="footer-buttons__button" href="#popup1">Задать вопрос</a>
-          <a class="footer-buttons__button" href="#popup1">Заказать звонок</a>
-          <a class="footer-buttons__button" href="#popup1">Заказать сертификат</a>
+          <a class="footer-buttons__button" href="page-question.html">Задать вопрос</a>
+          <a class="footer-buttons__button" href="page-call.html">Заказать звонок</a>
+          <a class="footer-buttons__button" href="page-application.html">Заказать сертификат</a>
         </div>
       </div>
     </div>
@@ -345,22 +323,40 @@
 
 <footer class="page-footer">
   <div class="container">
+
+    <div class="row">
+      <div class="col-xs-8">
+          <nav class="page-footer__nav  nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link  nav__link--active" href="index.html">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-news.html">Новости</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-glossary.html">Сертификация в деталях</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-faq.html">Часто задаваемые вопросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-reviews.html">Благодарственные письма</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-8">
         <div class="page-footer__contacts">
           <div class="page-footer__address">
-            <p>Москва:</p>
-            <p>+7 (495) 649-13-54 ; +7 (495) 663-22-18</p>
-            <p>info@sevtest</p>
+            <span>Москва:</span>
+            <span>+7 (495) 649-13-54; +7 (495) 663-22-18</span>
+            <span>info@sevtest</span>
           </div>
           <div class="page-footer__address">
-            <p>Санкт-Петербург: </p>
-            <p>+7 (812) 493-59-27 ; +7 (812) 951-26-42</p>
-            <p>spb@sevtest.ru</p>
+            <span>Санкт-Петербург:</span>
+            <span>+7 (812) 493-59-27; +7 (812) 951-26-42</span>
+            <span>spb@sevtest.ru</span>
           </div> 
-          <div class="page-footer__rss">RSS</div>
         </div>
-      </div> 
+      </div>
+    </div>
+
+    <div class="row">       
       <div class="col-xs-8">
         <div class="page-footer__copyright">© 2007—2016 Сертификационный центр «СевТест». Полный спектр услуг в области сертификации.</div>
       </div>           
@@ -369,24 +365,112 @@
   </div>
 </footer>
 
-<div id="popup1" class="popup">
-  <div class="popup__overlay">
-    <div class="popup__container">
-      <a class="popup__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-      <h2 class="popup__title">Заказать сертификат</h2>          
-      <div class="popup__content">
-        <input type="text" placeholder="Наименование продукции">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Контактный телефон">
-        <input type="text" placeholder="Страна">
-        <input type="text" placeholder="Регион">
-        <div class="popup__captcha"></div>
-        <button class="popup__button" type="submit">Заказать документ</button>
-      </div>
-    </div>
+<section id="modal__application" class="modal">
+  <div class="modal__overlay">
+
+    <form id="form-application" class="form-application" action="">
+  <a class="form-application__close" href="#">Закрыть</a>
+  <h3 class="form-application__title">Оставить заявку</h3>
+  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
+  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
+  <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*" required>
+  <div class="form-application__country">
+    <input class="form-application__input" type="text" name="Страна" placeholder="Страна*" required>
+    <ul class="form-application__country-list">
+      <li class="bold">Россия</li>
+      <li class="bold">Беларусь</li>
+      <li class="bold">Казахстан</li> 
+      <li>Украина</li>
+      <li>Азербайджан</li>
+      <li>Армения</li>    
+      <li>Грузия</li>
+      <li>Молдавия</li>
+      <li>Узбекистан</li>  
+      <li>Киргизия</li>
+      <li>Таджикистан</li>
+      <li>Туркменистан</li> 
+    </ul> 
   </div>
-</div>
+  <div class="form-application__region">
+    <input class="form-application__input" type="text" name="Регион" placeholder="Регион*" required>
+    <ul class="form-application__region-list">
+      <li>Санкт-Петербург и Ленинградская область</li>
+      <li>Москва и Московская область</li>
+      <li>Новгородская область</li> 
+      <li>Псковская область</li>
+      <li>Республика Карелия</li>
+      <li>Мурманская область</li>    
+      <li>Калининградская область</li>
+      <li>Вологодская область</li>
+      <li>Тверская область</li>
+    </ul> 
+  </div>
+  <div class="form-application__captcha">
+    <div class="form-application__captcha-img">
+      <img src="img/captcha.jpg" alt="">
+      <a class="form-application__reload" href="#"></a>
+    </div>
+    <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  </div>
+  <button class="form-application__btn" type="submit">Заказать документ</button>
+</form>
+
+  </div>
+</section>
+
+<section id="modal__question" class="modal">
+  <div class="modal__overlay">
+
+    <form id="form-question" class="form-question" action="">
+  <a class="form-question__close" href="#">Закрыть</a>
+  <h3 class="form-question__title">Оставить заявку</h3>
+  <input class="form-question__input" type="text" name="Имя" placeholder="Имя" required>
+  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-question__input" type="email" name="Email" placeholder="Email*" required>
+  <div class="form-question__country">
+    <input class="form-question__input" type="text" name="Страна" placeholder="Страна*" required>
+    <ul class="form-question__country-list">
+      <li class="bold">Россия</li>
+      <li class="bold">Беларусь</li>
+      <li class="bold">Казахстан</li> 
+      <li>Украина</li>
+      <li>Азербайджан</li>
+      <li>Армения</li>    
+      <li>Грузия</li>
+      <li>Молдавия</li>
+      <li>Узбекистан</li>  
+      <li>Киргизия</li>
+      <li>Таджикистан</li>
+      <li>Туркменистан</li> 
+    </ul> 
+  </div>
+  <div class="form-question__region">
+    <input class="form-question__input" type="text" name="Регион" placeholder="Регион*" required>
+    <ul class="form-question__region-list">
+      <li>Санкт-Петербург и Ленинградская область</li>
+      <li>Москва и Московская область</li>
+      <li>Новгородская область</li> 
+      <li>Псковская область</li>
+      <li>Республика Карелия</li>
+      <li>Мурманская область</li>    
+      <li>Калининградская область</li>
+      <li>Вологодская область</li>
+      <li>Тверская область</li>
+    </ul> 
+  </div>
+  <textarea class="form-question__textarea" name="Вопрос" placeholder="Ваш вопрос" required></textarea>
+  <div class="form-question__captcha">
+    <div class="form-question__captcha-img">
+      <img src="../img/captcha.jpg" alt="">
+    </div>
+    <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  </div>
+  <button class="form-question__btn" type="submit">Спросить</button>
+</form>
+
+  </div>
+</section>
 <script src="js/script.min.js"></script>
 
 

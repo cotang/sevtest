@@ -14,23 +14,11 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <!-- <script src="js/modernizr-custom.js"></script> -->
-
 <!--
 <link href="/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="icon" sizes="192x192" href="img/favicons/favicon-192x192.png">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-57x57.png">
-<meta name="theme-color" content="#2b2f38">
-<meta name="msapplication-TileColor" content="#2b2f38">
-<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
 -->
 
 </head>
@@ -73,6 +61,7 @@
       </div>   
       <div class="col-xs-8 col-lg-1">  
         <div class="page-header__flags">
+          <a href="" class="page-header__flag-item  page-header__flag-item--rss"></a>
           <a href="" class="page-header__flag-item"></a>
           <a href="" class="page-header__flag-item"></a>          
         </div>
@@ -133,12 +122,12 @@
       <div class="col-xs-8">
           <nav class="page-header__nav  nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link  nav__link--active" href="page.html">О компании</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Новости</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Сертификация в деталях</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Часто задаваемые вопросы</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Благодарственные письма</a></li>
-              <li class="nav__item"><a class="nav__link" href="page.html">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link  nav__link--active" href="index.html">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-news.html">Новости</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-glossary.html">Сертификация в деталях</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-faq.html">Часто задаваемые вопросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-reviews.html">Благодарственные письма</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-contacts.html">Контакты</a></li>
             </ul>
           </nav>
       </div>
@@ -265,49 +254,50 @@
         </div>
 
         <div class="col-xs-8  col-sm-5  col-md-6">
-            <main class="main">
+            <main class="main  page page--faq">
 				
-				<section class="page page--faq">
-					<div class="page__breadcrumbs">
-						<a href="">Севтест - центр по сертификации</a>&gt;<span>Часто задаваемые вопросы</span>
-					</div>
-					<h1 class="page__title">Часто задаваемые вопросы</h1>
-					<div class="page__items">
-						<div class="item  item--faq">
-							<h2 class="item__title">Подскажите, в чём отличие гигиенического заключения от гигиенического сертификата?</h2>
-							<div class="item__content">
-								<p>Ни в чём. В действительности это один документ – «Свидетельство о госрегистрации продукции». Более десяти лет назад такой же документ оформлялся другими ведомствами и на других бланках, а назывался он «Гигиенический сертификат». Старые наименования используются сегодня отчасти для краткости, отчасти по привычке.</p>
-							</div>
-						</div>
-						<div class="item  item--faq">
-							<h2 class="item__title">Я планирую открыть мини-пекарню. Могу ли я выпускать и реализовывать свою продукцию без сертификата, а если это можно, то в какие сроки мне необходимо сертифицировать своё производство и реализацию?</h2>
-							<div class="item__content">
-								<p>Продажа в РФ может быть осуществлена только при наличии всей необходимой документации. Вам следует получить Свидетельство о госрегистрации продукции и декларацию соответствия. Всё это можно оформить в нашем центре.</p>
-							</div>
-						</div>
-						<div class="item  item--faq">
-							<h2 class="item__title">Чем отличаются Свидетельство о госрегистрации (СГР) и Экспертное заключение (ЭЗ)?</h2>
-							<div class="item__content">
-								<p>Доброго дня. Два эти документа подтверждают гигиеническую и санитарную безопасность товаров. В Решении КТС под номером 299 перечислен перечень товаров, первый из которых содержит продукцию, на которую следует оформлять СГР, второй же – ЭЗ. Также, не стоит упускать тот факт, что ЭЗ является документом, что оформляется на добровольной основе, а СГР на обязательной. В центре сертификации «Севтест» можно оформить их оба.</p>
-							</div>
-						</div>
-						<div class="item  item--faq">
-							<h2 class="item__title">Какой разрешительный документ необходимо оформлять на ввозимое транспортное средство, чтобы получить ПТС?</h2>
-							<div class="item__content">
-								<p>Для легального ввоза автомобиля в Таможенный союз необходимо получение Свидетельства о безопасности конструкции транспорта (СБКТС). Оформление такого свидетельства осуществляется на основе ТРТС О безопасности колесного транспорта 018/2011 г. Сотрудники нашего аккредитованного центра помогут Вам в этом вопросе.</p>
-							</div>
-						</div>
-						<div class="item  item--faq">
-							<h2 class="item__title">В чём отличие сертификата ТР ТС от декларации соответствия ТРТС?</h2>
-							<div class="item__content">
-								<p>Каждый Техрегламент содержит информацию о списках продукции, в них и указано для каких изделий требуется получение декларации, а для каких сертификата. При оформлении сертификата ответственность несёт орган, выдавший документ, в случае с декларацией соответствия – заявитель. При всём при этом два этих разрешения имеют одинаковую юридическую силу.</p>
-							</div>
-						</div>						
-					</div>	
-					<div class="page__q-not-found">
-						<h3>Не нашли ответа на Ваш вопрос? Задайте его экспертам, заполнив форму ниже.</h3>
+				<section class="breadcrumbs">
+					<a href="">Севтест - центр по сертификации</a>&gt;<span>Часто задаваемые вопросы</span>
+				</section>
+				<h1 class="page__title">Часто задаваемые вопросы</h1>
 
-						<form id="form-question" class="form-question" action="">
+				<div class="page__faqs">
+					<section class="faq">
+						<h2 class="faq__title">Подскажите, в чём отличие гигиенического заключения от гигиенического сертификата?</h2>
+						<div class="faq__content">
+							<p>Ни в чём. В действительности это один документ – «Свидетельство о госрегистрации продукции». Более десяти лет назад такой же документ оформлялся другими ведомствами и на других бланках, а назывался он «Гигиенический сертификат». Старые наименования используются сегодня отчасти для краткости, отчасти по привычке.</p>
+						</div>
+					</section>
+					<section class="faq">
+						<h2 class="faq__title">Я планирую открыть мини-пекарню. Могу ли я выпускать и реализовывать свою продукцию без сертификата, а если это можно, то в какие сроки мне необходимо сертифицировать своё производство и реализацию?</h2>
+						<div class="faq__content">
+							<p>Продажа в РФ может быть осуществлена только при наличии всей необходимой документации. Вам следует получить Свидетельство о госрегистрации продукции и декларацию соответствия. Всё это можно оформить в нашем центре.</p>
+						</div>
+					</section>
+					<section class="faq">
+						<h2 class="faq__title">Чем отличаются Свидетельство о госрегистрации (СГР) и Экспертное заключение (ЭЗ)?</h2>
+						<div class="faq__content">
+							<p>Доброго дня. Два эти документа подтверждают гигиеническую и санитарную безопасность товаров. В Решении КТС под номером 299 перечислен перечень товаров, первый из которых содержит продукцию, на которую следует оформлять СГР, второй же – ЭЗ. Также, не стоит упускать тот факт, что ЭЗ является документом, что оформляется на добровольной основе, а СГР на обязательной. В центре сертификации «Севтест» можно оформить их оба.</p>
+						</div>
+					</section>
+					<section class="faq">
+						<h2 class="faq__title">Какой разрешительный документ необходимо оформлять на ввозимое транспортное средство, чтобы получить ПТС?</h2>
+						<div class="faq__content">
+							<p>Для легального ввоза автомобиля в Таможенный союз необходимо получение Свидетельства о безопасности конструкции транспорта (СБКТС). Оформление такого свидетельства осуществляется на основе ТРТС О безопасности колесного транспорта 018/2011 г. Сотрудники нашего аккредитованного центра помогут Вам в этом вопросе.</p>
+						</div>
+					</section>
+					<section class="faq">
+						<h2 class="faq__title">В чём отличие сертификата ТР ТС от декларации соответствия ТРТС?</h2>
+						<div class="faq__content">
+							<p>Каждый Техрегламент содержит информацию о списках продукции, в них и указано для каких изделий требуется получение декларации, а для каких сертификата. При оформлении сертификата ответственность несёт орган, выдавший документ, в случае с декларацией соответствия – заявитель. При всём при этом два этих разрешения имеют одинаковую юридическую силу.</p>
+						</div>
+					</section>						
+				</div>	
+
+				<section class="page__ask-question">
+					<h3>Не нашли ответа на Ваш вопрос? Задайте его экспертам, заполнив форму ниже.</h3>
+
+					<form id="form-question" class="form-question" action="">
   <a class="form-question__close" href="#">Закрыть</a>
   <h3 class="form-question__title">Оставить заявку</h3>
   <input class="form-question__input" type="text" name="Имя" placeholder="Имя" required>
@@ -353,9 +343,8 @@
   </div>
   <button class="form-question__btn" type="submit">Спросить</button>
 </form>
-						
-					</div>						
-				</section>
+					
+				</section>						
             
             </main>
         </div>      
@@ -369,9 +358,9 @@
     <div class="row">
       <div class="col-xs-8">
         <div class="footer-buttons__wrapper">
-          <a class="footer-buttons__button" href="#popup1">Задать вопрос</a>
-          <a class="footer-buttons__button" href="#popup1">Заказать звонок</a>
-          <a class="footer-buttons__button" href="#popup1">Заказать сертификат</a>
+          <a class="footer-buttons__button" href="page-question.html">Задать вопрос</a>
+          <a class="footer-buttons__button" href="page-call.html">Заказать звонок</a>
+          <a class="footer-buttons__button" href="page-application.html">Заказать сертификат</a>
         </div>
       </div>
     </div>
@@ -380,22 +369,40 @@
 
 <footer class="page-footer">
   <div class="container">
+
+    <div class="row">
+      <div class="col-xs-8">
+          <nav class="page-footer__nav  nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link  nav__link--active" href="index.html">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-news.html">Новости</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-glossary.html">Сертификация в деталях</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-faq.html">Часто задаваемые вопросы</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-reviews.html">Благодарственные письма</a></li>
+              <li class="nav__item"><a class="nav__link" href="page-contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-8">
         <div class="page-footer__contacts">
           <div class="page-footer__address">
-            <p>Москва:</p>
-            <p>+7 (495) 649-13-54 ; +7 (495) 663-22-18</p>
-            <p>info@sevtest</p>
+            <span>Москва:</span>
+            <span>+7 (495) 649-13-54; +7 (495) 663-22-18</span>
+            <span>info@sevtest</span>
           </div>
           <div class="page-footer__address">
-            <p>Санкт-Петербург: </p>
-            <p>+7 (812) 493-59-27 ; +7 (812) 951-26-42</p>
-            <p>spb@sevtest.ru</p>
+            <span>Санкт-Петербург:</span>
+            <span>+7 (812) 493-59-27; +7 (812) 951-26-42</span>
+            <span>spb@sevtest.ru</span>
           </div> 
-          <div class="page-footer__rss">RSS</div>
         </div>
-      </div> 
+      </div>
+    </div>
+
+    <div class="row">       
       <div class="col-xs-8">
         <div class="page-footer__copyright">© 2007—2016 Сертификационный центр «СевТест». Полный спектр услуг в области сертификации.</div>
       </div>           
@@ -404,24 +411,112 @@
   </div>
 </footer>
 
-<div id="popup1" class="popup">
-  <div class="popup__overlay">
-    <div class="popup__container">
-      <a class="popup__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-      <h2 class="popup__title">Заказать сертификат</h2>          
-      <div class="popup__content">
-        <input type="text" placeholder="Наименование продукции">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Контактный телефон">
-        <input type="text" placeholder="Страна">
-        <input type="text" placeholder="Регион">
-        <div class="popup__captcha"></div>
-        <button class="popup__button" type="submit">Заказать документ</button>
-      </div>
-    </div>
+<section id="modal__application" class="modal">
+  <div class="modal__overlay">
+
+    <form id="form-application" class="form-application" action="">
+  <a class="form-application__close" href="#">Закрыть</a>
+  <h3 class="form-application__title">Оставить заявку</h3>
+  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
+  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
+  <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*" required>
+  <div class="form-application__country">
+    <input class="form-application__input" type="text" name="Страна" placeholder="Страна*" required>
+    <ul class="form-application__country-list">
+      <li class="bold">Россия</li>
+      <li class="bold">Беларусь</li>
+      <li class="bold">Казахстан</li> 
+      <li>Украина</li>
+      <li>Азербайджан</li>
+      <li>Армения</li>    
+      <li>Грузия</li>
+      <li>Молдавия</li>
+      <li>Узбекистан</li>  
+      <li>Киргизия</li>
+      <li>Таджикистан</li>
+      <li>Туркменистан</li> 
+    </ul> 
   </div>
-</div>
+  <div class="form-application__region">
+    <input class="form-application__input" type="text" name="Регион" placeholder="Регион*" required>
+    <ul class="form-application__region-list">
+      <li>Санкт-Петербург и Ленинградская область</li>
+      <li>Москва и Московская область</li>
+      <li>Новгородская область</li> 
+      <li>Псковская область</li>
+      <li>Республика Карелия</li>
+      <li>Мурманская область</li>    
+      <li>Калининградская область</li>
+      <li>Вологодская область</li>
+      <li>Тверская область</li>
+    </ul> 
+  </div>
+  <div class="form-application__captcha">
+    <div class="form-application__captcha-img">
+      <img src="img/captcha.jpg" alt="">
+      <a class="form-application__reload" href="#"></a>
+    </div>
+    <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  </div>
+  <button class="form-application__btn" type="submit">Заказать документ</button>
+</form>
+
+  </div>
+</section>
+
+<section id="modal__question" class="modal">
+  <div class="modal__overlay">
+
+    <form id="form-question" class="form-question" action="">
+  <a class="form-question__close" href="#">Закрыть</a>
+  <h3 class="form-question__title">Оставить заявку</h3>
+  <input class="form-question__input" type="text" name="Имя" placeholder="Имя" required>
+  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-question__input" type="email" name="Email" placeholder="Email*" required>
+  <div class="form-question__country">
+    <input class="form-question__input" type="text" name="Страна" placeholder="Страна*" required>
+    <ul class="form-question__country-list">
+      <li class="bold">Россия</li>
+      <li class="bold">Беларусь</li>
+      <li class="bold">Казахстан</li> 
+      <li>Украина</li>
+      <li>Азербайджан</li>
+      <li>Армения</li>    
+      <li>Грузия</li>
+      <li>Молдавия</li>
+      <li>Узбекистан</li>  
+      <li>Киргизия</li>
+      <li>Таджикистан</li>
+      <li>Туркменистан</li> 
+    </ul> 
+  </div>
+  <div class="form-question__region">
+    <input class="form-question__input" type="text" name="Регион" placeholder="Регион*" required>
+    <ul class="form-question__region-list">
+      <li>Санкт-Петербург и Ленинградская область</li>
+      <li>Москва и Московская область</li>
+      <li>Новгородская область</li> 
+      <li>Псковская область</li>
+      <li>Республика Карелия</li>
+      <li>Мурманская область</li>    
+      <li>Калининградская область</li>
+      <li>Вологодская область</li>
+      <li>Тверская область</li>
+    </ul> 
+  </div>
+  <textarea class="form-question__textarea" name="Вопрос" placeholder="Ваш вопрос" required></textarea>
+  <div class="form-question__captcha">
+    <div class="form-question__captcha-img">
+      <img src="../img/captcha.jpg" alt="">
+    </div>
+    <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  </div>
+  <button class="form-question__btn" type="submit">Спросить</button>
+</form>
+
+  </div>
+</section>
 <script src="js/script.min.js"></script>
 
 
