@@ -68,8 +68,9 @@ module.exports = function(grunt) {
     // склеиваем файлы js
     concat: {
       start: {
-        src: [    
-          'src/js/*.js'
+        src: [
+          'src/js/slick.js' ,         
+          'src/js/my-script.js'
         ],
         dest: 'build/js/script.js'
       }

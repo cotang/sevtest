@@ -87,13 +87,18 @@
 	&__button{
 		display: inline-block;
 		background-color: @red;
-		padding: 12px 50px;
-		margin: 50px 0 20px;
-		text-transform: uppercase;
+		font-weight: 500;
+		border: none;
+		outline: none;	
 		color: #fff;
-		&:hover, &:focus, &:visited{
-			color: #fff;			
-		}		
+		text-transform: uppercase;
+		padding: 15px 60px;
+		margin: 20px 0;
+		&:hover, &:focus, &:active{
+			color: #fff;
+			text-decoration: none;
+			box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.15);
+		}
 	}
 }
 
@@ -137,7 +142,7 @@
 	&__item{
 		list-style-type: none;
 		width: 33.3333333%;
-		font-size: @font-size-big;
+		font-size: @font-size;
 		padding: 0 40px;
 		margin: 20px 0;
 		background-image: url(../img/bg-circle.png);
@@ -192,16 +197,22 @@
 	&__button{
 		display: inline-block;
 		background-color: @red;
-		padding: 12px 50px;
-		text-transform: uppercase;
+		font-weight: 500;
+		border: none;
+		outline: none;	
 		color: #fff;
+		text-transform: uppercase;
+		padding: 15px 60px;
+		margin: 20px 0;
+		&:hover, &:focus, &:active{
+			color: #fff;
+			text-decoration: none;
+			box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.15);
+		} 
+
 	    @media only screen and (max-width:  @screen-sm-max) {
 	        margin-top: 20px;
-	    }
-
-		&:hover, &:focus, &:visited{
-			color: #fff;			
-		}		
+	    }		
 	}
 }
 
@@ -293,7 +304,7 @@
 	}
 	&__item{
 		list-style-type: none;
-		font-size: @font-size-bigger2;
+		font-size: @font-size-bigger;
 		padding: 0 35px;
 		margin: 20px 0;
 		text-align: left;
@@ -321,5 +332,56 @@
 				width: 15px;
 		    }			
 		}							
+	}
+}
+.partners{
+	font-family: @myriad-regular;	
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&__title{
+		font-size: @font-size-title;
+		margin-top: 20px;
+		margin-bottom: 0;
+		padding: 15px 20px 0;
+		text-align: left;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        margin-bottom: 20px;
+	        text-align: center;
+	    }		
+	}
+	&__list{
+		padding-left: 0;
+		margin-left: -15px;
+		margin-right: 15px;		
+		margin-top: 40px;
+		margin-bottom: 0;		
+		display: flex;
+		justify-content: space-between;
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        display: block;
+	        margin: 10px;
+	        text-align: center;
+	    }
+
+	}
+	&__img{
+		list-style-type: none;
+		width: 112px;
+		height: 41px;
+
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        display: inline-block;
+	        margin-right: 10px;
+	        margin-bottom: 10px;
+
+	    }		
+		
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}						
 	}
 }

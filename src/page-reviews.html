@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отзывы</title>
+<meta name="description" content="">
+@@include('_html_inc/page_head.html')
+</head>
+
+<body>
+
+@@include('_html_inc/page_header.html')
+
+<div class="container">
+    <div class="row">
+      	<div class="col-xs-8  col-sm-3  col-md-2">
+
+			@@include('_html_inc/page_sidebar.html')
+
+        </div>
+
+        <div class="col-xs-8  col-sm-5  col-md-6">
+            <main class="main  page  page--reviews">
+				
+				<section class="breadcrumbs">
+					<a href="">Севтест - центр по сертификации</a>&gt;<span>Отзывы</span>
+				</section>
+				<h1 class="page__title">Отзывы</h1>
+
+				<section class="mails">
+					<h2 class="mails__title">Благодарственные письма</h2>
+					<div id="mails__gallery" class="mails__gallery">
+						<a href="#" class="mails__img">
+							<img src="img/review01.jpg" height="1443" width="1020" alt="">
+						</a>
+						<a href="#" class="mails__img">
+							<img src="img/review02.jpg" height="1443" width="1020" alt="">
+						</a>
+						<a href="#" class="mails__img">
+							<img src="img/review03.jpg" height="1443" width="1020" alt="">
+						</a>	
+						<a href="#" class="mails__img">
+							<img src="img/review01.jpg" height="1443" width="1020" alt="">
+						</a>
+						<a href="#" class="mails__img">
+							<img src="img/review02.jpg" height="1443" width="1020" alt="">
+						</a>
+						<a href="#" class="mails__img">
+							<img src="img/review03.jpg" height="1443" width="1020" alt="">
+						</a>		
+					</div>
+				</section>
+
+				<section class="page__reviews">
+
+					@@include('_html_inc/form-review.html')
+
+					<section class="review">
+						<h3 class="review__title"><a href="">Спасибо за консультацию!</a></h3>
+						<div class="review__company"><p>Компания: Частное лицо</p></div>
+						<div class="review__content">
+							<p>Комментарий: Ответом удовлетворен Все вежливо и культурно Большое спасибо ! Хотя считаю что, когда существовали госты было все намного качественней и надежней, никакого сравнения с ту и всякими сертификатами еще раз большое спасибо с уважением Иван Михайлович</p>
+						</div>
+					</section>
+					<section class="review">
+						<h3 class="review__title"><a href="">Thanks!</a></h3>
+						<div class="review__company"><p>Компания:</p></div>
+						<div class="review__content">
+							<p>We've arvierd at the end of the line and I have what I need!</p>
+						</div>
+					</section>							
+
+				</section>		
+            
+            </main>
+        </div>      
+    </div>
+</div>    
+
+
+
+@@include('_html_inc/page_footer.html')
+@@include('_html_inc/page_bottom.html')
+
+</body>
+</html>

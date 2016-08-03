@@ -1,7 +1,6 @@
 .page-header{
 	font-family: @myriad-regular;
 	text-align: center;
-
 	
 	&__inner{
 		padding-top: 20px;
@@ -91,19 +90,22 @@
 		margin-top: 5px;
 	}
 	&__flag-item{
-		width: 50px;
-		height: 30px;
+		width: 28px;
+		height: 28px;
+		margin-left: 5px;
 		display: inline-block;
-		vertical-align: bottom;
-		border: 1px solid @text-gray;
+		vertical-align: top;
+		//border: 1px solid @text-gray;
 		background-size: 100% 100%;
-
-
-		&:first-child{
-			background-image: url(../img/flag-ru.png);
+		&--rss{
+			background-image: url(../img/rss.jpg);
 		}
-		&:last-child{
-			background-image: url(../img/flag-en.png);
+
+		&:nth-child(2){
+			background-image: url(../img/flag-icon-ru.png);
+		}
+		&:nth-child(3){
+			background-image: url(../img/flag-icon-en.png);
 		}		
 	}
 
@@ -167,19 +169,28 @@
 		margin: 0;
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 		font-size: @font-size-big;
+	    @media only screen and (max-width:  @screen-lg-max) {
+			width: 80%;
+			margin: 0 auto;
+	    }		
 	    @media only screen and (max-width:  @screen-sm-max) {
+	    	width: 100%;
 			display: block;
 	    }		
 	}
 	&__item{
 		list-style-type: none;
-
+	    @media only screen and (max-width:  @screen-lg-max) {
+			margin: 0 30px;
+			padding-top: 10px;			
+			padding-bottom: 10px;			
+	    }	
 	    @media only screen and (max-width:  @screen-sm-max) {
 			display: block;
-			padding-top: 10px;			
-			padding-bottom: 10px;
+
 			border-top: 1px solid @text-gray;
 		    &:last-child{
 				border-bottom: 1px solid @text-gray;		    	

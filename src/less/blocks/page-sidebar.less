@@ -35,21 +35,21 @@
 		list-style-type: none;		
 		border-bottom: 2px solid @text-gray;
 		position: relative;
-
-		input{
+		&:after{
+			position: absolute;
+			top: -10px;
+			right: -20px;
+			padding: 0 5px;
 			display: none;
-			// &:checked{
-			// 	~ .services__label ~ .services__content{
-			// 		display: block;
-			// 		//height: auto;
-			// 	}
-			// 	~ .services__label .fa-chevron-up{
-			// 		display: block;
-			// 	}
-			// 	~ .services__label .fa-chevron-down{
-			// 		display: none;
-			// 	}				
-			// }
+			height: 20px;
+			font-size: @font-size-small;
+			color: @text-gray;
+			content: 'Кликните для просмотра раздела';
+			background: @pale-bg;
+			border: 1px solid @text-gray;
+		}
+		&:hover&:after{
+			display: inline-block;
 		}
 	}
 	&__link-main{
@@ -76,9 +76,6 @@
 		position: absolute;
 		right: 10px;
 		top: 15px;
-		// .fa-chevron-up{
-		// 	display: none;
-		// }
 	}
 	&__content{
 		padding: 5px 10px 5px 20px;

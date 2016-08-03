@@ -1,4 +1,4 @@
-.form-application{
+.form-review{
 	text-align: center;
     margin: 0 auto;
     padding: 20px 50px;
@@ -8,9 +8,10 @@
     position: relative;		
     @media only screen and (max-width:  @screen-md-max) {
 		padding: 20px;
-    }    
+    } 
 
     &__close {
+    	display: none;
 	    position: absolute;
 	    top: -30px;
 	    right: 0;
@@ -25,8 +26,9 @@
     }	
 	&__title{
 		font-size: @font-size-bigger2;
+		color: @text-gray;
 		font-weight: 700;
-		padding: 20px 0 40px;
+		padding: 20px 0 30px;
 		margin: 0;
 		text-transform: uppercase;	
 	}
@@ -51,62 +53,26 @@
 			color: transparent;					
 		}
 	}
-	&__country{
-		position: relative;
-	}
-	&__country-list{
-		display: none;
-		padding-left: 0;
-		margin: 0;
-		position: absolute;
-		z-index: 3;
-		top: 60px;
-		left: 0;
-	    background: #fff;		
-	    border: 2px solid @border-gray;
-	    width: 100%;
-	    height: 250px;
-	    overflow-y: scroll;
-		li{
-			cursor: pointer;
-			border-bottom: 1px solid @border-gray;
-			padding: 10px 0;
-			&:hover{
-				background-color: @text-color;
-				color: #fff;
-			}
-			&:before{
-				content:"";
-			}
+	&__textarea{
+		width: 100%;
+		height: 200px;
+		padding: 15px 20px;
+		border: 2px solid @border-gray;
+		margin-bottom: 15px;
+		font-weight: 700;
+		background-color: #fff;
+
+		&::-webkit-input-placeholder{
+			color: @text-color;					
+		}				
+		&::placeholder{
+			color: @text-color;					
 		}
-	}
-	&__region{
-		position: relative;
-	}
-	&__region-list{
-		display: none;
-		padding-left: 0;
-		margin: 0;
-		position: absolute;
-		z-index: 3;
-		top: 60px;
-		left: 0;
-	    background: #fff;		
-	    border: 2px solid  @border-gray;
-	    width: 100%;
-	    height: 250px;
-	    overflow-y: scroll;
-		li{
-			cursor: pointer;
-			border-bottom: 1px solid  @border-gray;
-			padding: 10px 0;
-			&:hover{
-				background-color: @text-color;
-				color: #fff;
-			}
-			&:before{
-				content:"";
-			}
+		&:focus::-webkit-input-placeholder{
+			color: transparent;					
+		}				
+		&:focus::placeholder{
+			color: transparent;					
 		}
 	}
 	&__captcha-img{
@@ -120,17 +86,18 @@
 			display: block;
 			object-fit: cover;				
 		}
-	}
-	&__reload{
-		display: block;
-		position: absolute;
-		right: -36px;
-		top: 20px;
-		width: 16px;
-		height: 16px;
-		border: 1px solid @border-gray;
-		background-size: cover;
-		background-image: url(../img/mcc_captcha_reload.png);
+		&:after{
+			content: "";
+			cursor: pointer;
+			position: absolute;
+			right: -36px;
+			top: 20px;
+			width: 16px;
+			height: 16px;
+			border: 1px solid @border-gray;
+			background-size: cover;
+			background-image: url(../img/mcc_captcha_reload.png);
+		}
 	}
 	&__btn{
 		display: inline-block;
@@ -149,4 +116,3 @@
 		} 
 	}	
 }
-

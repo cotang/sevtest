@@ -1,20 +1,22 @@
 .form-call{
 	text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 50px;
     width: 100%;
     max-width: 570px;
     background-color: #fff;
     position: relative;		
-    
+    @media only screen and (max-width:  @screen-md-max) {
+		padding: 20px;
+    } 
+
     &__close {
-    	display: none;
 	    position: absolute;
 	    top: -30px;
 	    right: 0;
 	    color: #fff;
 	    transition: all 200ms;
-	    font-size: @font-size-small;
+	    font-size: @font-size;
 	    font-weight: 500;
 	    text-decoration: none;
 	    &:hover {
@@ -22,8 +24,7 @@
 	    }
     }	
 	&__title{
-		display: none;	
-		font-size: @font-size-big;
+		font-size: @font-size-bigger2;
 		font-weight: 700;
 		padding: 20px 0 40px;
 		margin: 0;

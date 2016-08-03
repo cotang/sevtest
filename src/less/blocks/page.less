@@ -2,50 +2,113 @@
 	padding-left: 20px;
 	padding-right: 40px;
 	padding-bottom: 60px;
-
     @media only screen and (max-width:  @screen-sm-max) {
         padding-right: 0;
         padding-left: 0;
     }
-	&__breadcrumbs{
-		font-size: 0.8em;
+	&__title{
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.form-application__close{
+		display: none;
+	}
+	.form-application__title{
+		display: none;
+	}
+	.form-question__close{
+		display: none;
+	}
+	.form-question__title{
+		display: none;
+	}
+	.form-call__close{
+		display: none;
+	}
+	.form-call__title{
+		display: none;
+	}	
+	.form-review__close{
+		display: none;
+	}
+	.form-review__title{
+		display: none;
+	}	
+}
+.breadcrumbs{
+	font-size: 0.8em;
+	color: @text-gray;
+	a{
+		margin-right: 10px;
+		margin-left: 10px;
 		color: @text-gray;
-		a{
-			margin-right: 10px;
-			margin-left: 10px;
-			color: @text-gray;
-			&:first-of-type{
-				margin-left: 0;
-			}
+		&:first-of-type{
+			margin-left: 0;
 		}
-		span{
-			margin-right: 10px;
-			margin-left: 10px;
-			font-weight: 700;
+	}
+	span{
+		margin-right: 10px;
+		margin-left: 10px;
+		font-weight: 700;
+	}
+}
+.pagination{
+	color: @text-gray;
+	span{
+		margin-right: 10px;
+	}	
+	&__number{
+		display: inline-block;
+		padding: 5px 10px;
+		color: @text-gray;
+		&--current{
+			background-color: @text-gray;
+			color: #fff;
+		}
+	}	
+}
+.directions{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	font-size: @font-size-small;
+	&__previous{
+		display: inline-block;
+		width: 30%;
+		text-align: left;
+		&:before{
+			content: "« ";
+		}
+	}
+	&__next{
+		display: inline-block;
+		width: 30%;		
+		text-align: right;
+		&:after{
+			content: " »";
 		}
 	}
 }
-
 .item{
-	padding-top: 10px;
-	padding-bottom: 25px;
-	&--faq{
-		border-bottom: 1px dotted @text-gray;
-		.item__title{
-			color: @text-gray;
-			font-size: @font-size-big;
-		}
-	}
+	padding-bottom: 30px;
+
 	&__date{
 		font-size: @font-size-small;
 	}
+	&__more{
+		font-weight: 700;
+	}
+}
+.review{
+	padding-top: 10px;
+	padding-bottom: 25px;
 	&:first-of-type{
 		padding-top: 15px;
 	}
 }
 .glossary{
-	margin-bottom: 10px;
-	margin-top: 25px;
+	margin-bottom: 40px;
+	margin-top: 30px;
 	&__all{
 		margin-right: 20px;
 	}
@@ -53,7 +116,13 @@
 		margin-right: 5px;
 	}
 }
-
+.faq{
+	border-bottom: 1px dotted @text-gray;
+	&__title{
+		color: @text-gray;
+		font-size: @font-size-big;
+	}
+}
 .office{
 	padding-top: 30px;
 	&__title{
@@ -75,5 +144,52 @@
 			display: block;
 			object-fit: cover;			
 		}
+	}
+}
+.mails{
+	margin-bottom: 50px;
+	&__title{
+		text-align: center;
+		text-transform: uppercase;
+		color: @text-gray;
+		font-size: @font-size-big;	
+		margin-top: 30px;
+		margin-bottom: 30px;	
+	}		
+	&__gallery{
+		max-width: 660px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;		
+	}	
+	&__img{
+		width: 220px;
+		height: 300px;
+		border: 1px solid @text-gray;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;			
+		}
+	}
+}
+.question{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	&__title{
+		text-align: center;
+	}
+	&__ask{
+		background-color: @pale-bg;
+		padding: 20px;		
+	}
+	&__answer{
+		padding: 20px;		
+	}	
+	&__details{
+		display: inline-block;
+		padding: 10px 20px;
+		text-decoration: underline;
 	}
 }
