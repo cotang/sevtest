@@ -1,52 +1,65 @@
 <form id="form-call" class="form-call" action="">
   <a class="form-call__close" href="#">Закрыть</a>
   <h3 class="form-call__title">Оставить заявку</h3>
-  <input class="form-call__input" type="text" name="Имя" placeholder="Имя" required>
-  <input class="form-call__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-call__input" type="email" name="Email" placeholder="Email*" required>
-  <div class="form-call__country">
-    <input class="form-call__input" type="text" name="Страна" placeholder="Страна*" required>
-    <ul class="form-call__country-list">
-      <li class="bold">Россия</li>
-      <li class="bold">Беларусь</li>
-      <li class="bold">Казахстан</li> 
-      <li>Украина</li>
-      <li>Азербайджан</li>
-      <li>Армения</li>    
-      <li>Грузия</li>
-      <li>Молдавия</li>
-      <li>Узбекистан</li>  
-      <li>Киргизия</li>
-      <li>Таджикистан</li>
-      <li>Туркменистан</li> 
-    </ul> 
+  <div class="form-call__input-wrapper required has-success">    
+    <input class="form-call__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
   </div>
-  <div class="form-call__region">
-    <input class="form-call__input" type="text" name="Регион" placeholder="Регион*" required>
-    <ul class="form-call__region-list">
-      <li>Санкт-Петербург и Ленинградская область</li>
-      <li>Москва и Московская область</li>
-      <li>Новгородская область</li> 
-      <li>Псковская область</li>
-      <li>Республика Карелия</li>
-      <li>Мурманская область</li>    
-      <li>Калининградская область</li>
-      <li>Вологодская область</li>
-      <li>Тверская область</li>
-    </ul> 
+  <div class="form-call__input-wrapper required has-error">    
+    <input class="form-call__input" type="tel" name="Телефон" placeholder="Телефон*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
   </div>
-  <div class="form-call__time">
-      <span class="form-call__time-text">Желаемое время звонка</span>
-      <div class="form-call__input-wrapper">с
-        <input class="form-call__input  form-call__input--time" type="time" name="Звонить с" placeholder="с">до
-        <input class="form-call__input  form-call__input--time" type="time" name="Звонить до" placeholder="до"> 
-      </div>     
+  <div class="form-call__input-wrapper required has-success">    
+    <input class="form-call__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
   </div>
-  <div class="form-call__captcha">
-    <div class="form-call__captcha-img">
-      <img src="../img/captcha.jpg" alt="">
+  <div class="form-call__input-wrapper required has-success">    
+    <div class="form-call__country">
+      <input class="form-call__input" type="text" name="Страна" placeholder="Страна*">
+      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <ul class="form-call__country-list">
+        <li class="bold">Россия</li>
+        <li class="bold">Беларусь</li>
+        <li class="bold">Казахстан</li> 
+        <li>Украина</li>
+        <li>Азербайджан</li>
+        <li>Армения</li>    
+        <li>Грузия</li>
+        <li>Молдавия</li>
+        <li>Узбекистан</li>  
+        <li>Киргизия</li>
+        <li>Таджикистан</li>
+        <li>Туркменистан</li> 
+      </ul> 
     </div>
-    <input class="form-call__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
   </div>
+  <div class="form-call__input-wrapper required has-success">    
+    <div class="form-call__region">
+      <input class="form-call__input" type="text" name="Регион" placeholder="Регион*" required>
+      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <ul class="form-call__region-list">
+        <li>Санкт-Петербург и Ленинградская область</li>
+        <li>Москва и Московская область</li>
+        <li>Новгородская область</li> 
+        <li>Псковская область</li>
+        <li>Республика Карелия</li>
+        <li>Мурманская область</li>    
+        <li>Калининградская область</li>
+        <li>Вологодская область</li>
+        <li>Тверская область</li>
+      </ul> 
+    </div>
+  </div>
+  <div class="form-call__input-wrapper required has-success">    
+    <div class="form-call__time">
+        <span class="form-call__time-text">Желаемое время звонка</span>
+        <div class="form-call__input-wrapper">с
+          <input class="form-call__input  form-call__input--time" type="time" name="Звонить с" placeholder="с">до
+          <input class="form-call__input  form-call__input--time" type="time" name="Звонить до" placeholder="до"> 
+        </div>
+        <p class="help-block  help-block-error">Ошибка!!!</p>     
+    </div>
+  </div>    
+  <div class="form-call__captcha"></div>
   <button class="form-call__btn" type="submit">Заказать звонок</button>
 </form>

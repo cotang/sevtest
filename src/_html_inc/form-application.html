@@ -1,47 +1,59 @@
 <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
-  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
-  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
-  <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*" required>
-  <div class="form-application__country">
-    <input class="form-application__input" type="text" name="Страна" placeholder="Страна*" required>
-    <ul class="form-application__country-list">
-      <li class="bold">Россия</li>
-      <li class="bold">Беларусь</li>
-      <li class="bold">Казахстан</li> 
-      <li>Украина</li>
-      <li>Азербайджан</li>
-      <li>Армения</li>    
-      <li>Грузия</li>
-      <li>Молдавия</li>
-      <li>Узбекистан</li>  
-      <li>Киргизия</li>
-      <li>Таджикистан</li>
-      <li>Туркменистан</li> 
-    </ul> 
+  <div class="form-application__input-wrapper required has-error">
+    <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
   </div>
-  <div class="form-application__region">
-    <input class="form-application__input" type="text" name="Регион" placeholder="Регион*" required>
-    <ul class="form-application__region-list">
-      <li>Санкт-Петербург и Ленинградская область</li>
-      <li>Москва и Московская область</li>
-      <li>Новгородская область</li> 
-      <li>Псковская область</li>
-      <li>Республика Карелия</li>
-      <li>Мурманская область</li>    
-      <li>Калининградская область</li>
-      <li>Вологодская область</li>
-      <li>Тверская область</li>
-    </ul> 
+  <div class="form-application__input-wrapper has-success">    
+    <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
   </div>
-  <div class="form-application__captcha">
-    <div class="form-application__captcha-img">
-      <img src="img/captcha.jpg" alt="">
-      <a class="form-application__reload" href="#"></a>
+  <div class="form-application__input-wrapper required has-success">
+    <input class="form-application__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>    
+  </div>
+  <div class="form-application__input-wrapper required has-success">
+    <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success">
+    <div class="form-application__country">
+      <input class="form-application__input" type="text" name="Страна" placeholder="Страна*">
+      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <ul class="form-application__country-list">
+        <li class="bold">Россия</li>
+        <li class="bold">Беларусь</li>
+        <li class="bold">Казахстан</li> 
+        <li>Украина</li>
+        <li>Азербайджан</li>
+        <li>Армения</li>    
+        <li>Грузия</li>
+        <li>Молдавия</li>
+        <li>Узбекистан</li>  
+        <li>Киргизия</li>
+        <li>Таджикистан</li>
+        <li>Туркменистан</li> 
+      </ul> 
     </div>
-    <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
   </div>
+  <div class="form-application__input-wrapper required has-success">  
+    <div class="form-application__region">
+      <input class="form-application__input" type="text" name="Регион" placeholder="Регион*">
+      <p class="help-block  help-block-error">Ошибка!!!</p>      
+      <ul class="form-application__region-list">
+        <li>Санкт-Петербург и Ленинградская область</li>
+        <li>Москва и Московская область</li>
+        <li>Новгородская область</li> 
+        <li>Псковская область</li>
+        <li>Республика Карелия</li>
+        <li>Мурманская область</li>    
+        <li>Калининградская область</li>
+        <li>Вологодская область</li>
+        <li>Тверская область</li>
+      </ul> 
+    </div>
+  </div>
+  <div class="form-application__captcha"></div>
   <button class="form-application__btn" type="submit">Заказать документ</button>
 </form>
