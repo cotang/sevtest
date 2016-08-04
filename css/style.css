@@ -3921,7 +3921,8 @@ img {
 .services__link-main {
 	font-weight: 700;
 	display: inline-block;
-	padding: 15px 35px 10px 0;
+	padding: 15px 0 10px;
+	margin-right: 40px;
 }
 
 .services__link-main--active {
@@ -3930,7 +3931,7 @@ img {
 }
 
 .services__link {
-	display: inline-block;
+	display: block;
 	padding: 5px 0 20px;
 	color: gray;
 }
@@ -4812,11 +4813,14 @@ img {
 	text-transform: uppercase;
 }
 
+.form-application__input-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-application__input {
 	width: 100%;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -4921,30 +4925,12 @@ img {
 	content: "";
 }
 
-.form-application__captcha-img {
-	width: 160px;
-	height: 60px;
-	position: relative;
-	margin: 0 auto 15px;
-}
-
-.form-application__captcha-img img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	object-fit: cover;
-}
-
-.form-application__reload {
-	display: block;
-	position: absolute;
-	right: -36px;
-	top: 20px;
-	width: 16px;
-	height: 16px;
-	border: 1px solid gray;
-	background-size: cover;
-	background-image: url(../img/mcc_captcha_reload.png);
+.form-application__captcha {
+	text-align: center;
+	max-width: 240px;
+	height: 70px;
+	margin: 30px auto 15px;
+	background-color: #333;
 }
 
 .form-application__btn {
@@ -5000,11 +4986,14 @@ img {
 	text-transform: uppercase;
 }
 
+.form-question__input-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-question__input {
 	width: 100%;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -5109,12 +5098,15 @@ img {
 	content: "";
 }
 
+.form-question__textarea-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-question__textarea {
 	width: 100%;
 	height: 200px;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -5151,31 +5143,12 @@ img {
 	color: transparent;
 }
 
-.form-question__captcha-img {
-	width: 160px;
-	height: 60px;
-	position: relative;
-	margin: 0 auto 15px;
-}
-
-.form-question__captcha-img img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	object-fit: cover;
-}
-
-.form-question__captcha-img:after {
-	content: "";
-	cursor: pointer;
-	position: absolute;
-	right: -36px;
-	top: 20px;
-	width: 16px;
-	height: 16px;
-	border: 1px solid gray;
-	background-size: cover;
-	background-image: url(../img/mcc_captcha_reload.png);
+.form-question__captcha {
+	text-align: center;
+	max-width: 240px;
+	height: 70px;
+	margin: 30px auto 15px;
+	background-color: #333;
 }
 
 .form-question__btn {
@@ -5231,11 +5204,14 @@ img {
 	text-transform: uppercase;
 }
 
+.form-call__input-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-call__input {
 	width: 100%;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -5371,31 +5347,12 @@ img {
 	content: "";
 }
 
-.form-call__captcha-img {
-	width: 160px;
-	height: 60px;
-	position: relative;
-	margin: 0 auto 15px;
-}
-
-.form-call__captcha-img img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	object-fit: cover;
-}
-
-.form-call__captcha-img:after {
-	content: "";
-	cursor: pointer;
-	position: absolute;
-	right: -36px;
-	top: 20px;
-	width: 16px;
-	height: 16px;
-	border: 1px solid gray;
-	background-size: cover;
-	background-image: url(../img/mcc_captcha_reload.png);
+.form-call__captcha {
+	text-align: center;
+	max-width: 240px;
+	height: 70px;
+	margin: 30px auto 15px;
+	background-color: #333;
 }
 
 .form-call__btn {
@@ -5453,11 +5410,14 @@ img {
 	text-transform: uppercase;
 }
 
+.form-review__input-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-review__input {
 	width: 100%;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -5494,12 +5454,15 @@ img {
 	color: transparent;
 }
 
+.form-review__textarea-wrapper {
+	margin-bottom: 15px;
+}
+
 .form-review__textarea {
 	width: 100%;
 	height: 200px;
 	padding: 15px 20px;
 	border: 2px solid gray;
-	margin-bottom: 15px;
 	font-weight: 700;
 	background-color: #fff;
 }
@@ -5536,31 +5499,12 @@ img {
 	color: transparent;
 }
 
-.form-review__captcha-img {
-	width: 160px;
-	height: 60px;
-	position: relative;
-	margin: 0 auto 15px;
-}
-
-.form-review__captcha-img img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	object-fit: cover;
-}
-
-.form-review__captcha-img:after {
-	content: "";
-	cursor: pointer;
-	position: absolute;
-	right: -36px;
-	top: 20px;
-	width: 16px;
-	height: 16px;
-	border: 1px solid gray;
-	background-size: cover;
-	background-image: url(../img/mcc_captcha_reload.png);
+.form-review__captcha {
+	text-align: center;
+	max-width: 240px;
+	height: 70px;
+	margin: 30px auto 15px;
+	background-color: #333;
 }
 
 .form-review__btn {
@@ -5581,6 +5525,20 @@ img {
 	color: #fff;
 	text-decoration: none;
 	box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.has-success input,
+.has-success textarea {
+	border: 2px solid #5cb85c;
+}
+
+.has-success .help-block-error {
+	display: none;
+}
+
+.has-error input,
+.has-error textarea {
+	border: 2px solid #d9534f;
 }
 
 /*
@@ -6238,13 +6196,13 @@ img {
 	padding-top: 80px;
 }
 
+.form-call__input-wrapper {
+	width: 100%;
+}
+
 .form-call__time-text {
 	width: 100%;
 	margin-bottom: 15px;
-}
-
-.form-call__input-wrapper {
-	width: 100%;
 }
 
 }
