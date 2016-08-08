@@ -86,26 +86,28 @@
 		min-width: 140px;
 	}	
 	&__flags{
-		text-align: center;
+		text-align: left;
 		margin-top: 5px;
 	}
 	&__flag-item{
-		width: 28px;
-		height: 28px;
+		width: 36px;
+		height: 26px;
 		margin-left: 5px;
 		display: inline-block;
 		vertical-align: top;
-		//border: 1px solid @text-gray;
-		background-size: 100% 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
 		&--rss{
-			background-image: url(../img/rss.jpg);
+			width: 26px;
+			background-image: url(../img/rss.png);
 		}
 
 		&:nth-child(2){
-			background-image: url(../img/flag-icon-ru.png);
+			background-image: url(../img/rus.png);
 		}
 		&:nth-child(3){
-			background-image: url(../img/flag-icon-en.png);
+			background-image: url(../img/eng.png);
 		}		
 	}
 

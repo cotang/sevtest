@@ -1,22 +1,22 @@
 <form id="form-call" class="form-call" action="">
   <a class="form-call__close" href="#">Закрыть</a>
-  <h3 class="form-call__title">Оставить заявку</h3>
+  <h3 class="form-call__title">Заказать звонок</h3>
   <div class="form-call__input-wrapper required has-success">    
     <input class="form-call__input" type="text" name="Имя" placeholder="Имя*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-call__input-wrapper required has-error">    
     <input class="form-call__input" type="tel" name="Телефон" placeholder="Телефон*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-call__input-wrapper required has-success">    
     <input class="form-call__input" type="email" name="Email" placeholder="Email*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-call__input-wrapper required has-success">    
     <div class="form-call__country">
       <input class="form-call__input" type="text" name="Страна" placeholder="Страна*">
-      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
       <ul class="form-call__country-list">
         <li class="bold">Россия</li>
         <li class="bold">Беларусь</li>
@@ -35,8 +35,8 @@
   </div>
   <div class="form-call__input-wrapper required has-success">    
     <div class="form-call__region">
-      <input class="form-call__input" type="text" name="Регион" placeholder="Регион*" required>
-      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <input class="form-call__input" type="text" name="Регион" placeholder="Регион*">
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
       <ul class="form-call__region-list">
         <li>Санкт-Петербург и Ленинградская область</li>
         <li>Москва и Московская область</li>
@@ -57,9 +57,10 @@
           <input class="form-call__input  form-call__input--time" type="time" name="Звонить с" placeholder="с">до
           <input class="form-call__input  form-call__input--time" type="time" name="Звонить до" placeholder="до"> 
         </div>
-        <p class="help-block  help-block-error">Ошибка!!!</p>     
+        <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>     
     </div>
   </div>    
   <div class="form-call__captcha"></div>
   <button class="form-call__btn" type="submit">Заказать звонок</button>
+  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
 </form>

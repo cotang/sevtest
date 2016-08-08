@@ -3742,29 +3742,32 @@ img {
 }
 
 .page-header__flags {
-	text-align: center;
+	text-align: left;
 	margin-top: 5px;
 }
 
 .page-header__flag-item {
-	width: 28px;
-	height: 28px;
+	width: 36px;
+	height: 26px;
 	margin-left: 5px;
 	display: inline-block;
 	vertical-align: top;
-	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .page-header__flag-item--rss {
-	background-image: url(../img/rss.jpg);
+	width: 26px;
+	background-image: url(../img/rss.png);
 }
 
 .page-header__flag-item:nth-child(2) {
-	background-image: url(../img/flag-icon-ru.png);
+	background-image: url(../img/rus.png);
 }
 
 .page-header__flag-item:nth-child(3) {
-	background-image: url(../img/flag-icon-en.png);
+	background-image: url(../img/eng.png);
 }
 
 .page-header__logo {
@@ -3900,13 +3903,34 @@ img {
 	position: relative;
 }
 
-.services__item:after {
-	position: absolute;
-	top: -10px;
-	right: -20px;
-	padding: 0 5px;
+.services__item:before {
+	content: "";
 	display: none;
-	height: 20px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	z-index: 1;
+	top: 7px;
+	right: 13px;
+	background: #f5f5f5;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	width: 10px;
+	height: 10px;
+}
+
+.services__item:hover.services__item:before {
+	display: inline-block;
+}
+
+.services__item:after {
+	display: none;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	padding: 5px 10px;
+	border-radius: 5px;
 	font-size: 13px;
 	color: gray;
 	content: 'Кликните для просмотра раздела';
