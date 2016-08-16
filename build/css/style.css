@@ -3304,6 +3304,7 @@ body {
 a {
 	color: #323242;
 	text-decoration: none;
+	transition: all 0.325s ease;
 }
 
 a:hover,
@@ -3717,6 +3718,7 @@ img {
 	margin-right: 5px;
 	cursor: pointer;
 	opacity: 0.5;
+	transition: all 0.325s ease;
 }
 
 .page-header__social i:hover {
@@ -3842,6 +3844,45 @@ img {
 	font-weight: 700;
 }
 
+.nav__hamburger {
+	display: none;
+}
+
+.hamburger {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 25px;
+}
+
+.hamburger span {
+	display: block;
+	width: 30px;
+	margin: 0 auto;
+	height: 3px;
+	background-color: gray;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: gray;
+}
+
+.hamburger span:before {
+	-webkit-transform: translateY(-250%);
+	-ms-transform: translateY(-250%);
+	transform: translateY(-250%);
+}
+
+.hamburger span:after {
+	-webkit-transform: translateY(150%);
+	-ms-transform: translateY(150%);
+	transform: translateY(150%);
+}
+
 .other-cities__inner {
 	display: inline-block;
 	position: relative;
@@ -3918,6 +3959,7 @@ img {
 	border-right: 1px solid gray;
 	width: 10px;
 	height: 10px;
+	transition: all 0.325s ease;
 }
 
 .services__item:hover.services__item:before {
@@ -3936,6 +3978,7 @@ img {
 	content: 'Кликните для просмотра раздела';
 	background: #f5f5f5;
 	border: 1px solid gray;
+	transition: all 0.325s ease;
 }
 
 .services__item:hover.services__item:after {
@@ -5556,13 +5599,13 @@ img {
 	border: 2px solid #5cb85c;
 }
 
-.has-success .help-block-error {
-	display: none;
-}
-
 .has-error input,
 .has-error textarea {
 	border: 2px solid #d9534f;
+}
+
+.help-block {
+	display: none;
 }
 
 /*
@@ -6197,6 +6240,10 @@ img {
 	margin-right: 0;
 }
 
+.page-header__flags {
+	text-align: center;
+}
+
 .page-header__other-cities {
 	margin-bottom: 20px;
 }
@@ -6232,6 +6279,14 @@ img {
 }
 
 @media only screen and (max-width: 993px) {
+
+.page-header__line {
+	padding-bottom: 10px;
+}
+
+.page-header__nav {
+	margin-bottom: 0;
+}
 
 .form-application {
 	padding: 20px;

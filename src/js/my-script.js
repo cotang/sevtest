@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+    /* Hamburger */
+    if ($(window).width() < 767) {
+        $('.nav__hamburger').show();
+        $('.nav__list').hide(); 
+        $('.hamburger').click(function(e){
+            e.preventDefault();
+            $('.nav__list').toggle();
+        });               
+    }
+
     /* галерея благодарственных отзывов */
     $('#mails__gallery').slick({
       infinite: true,
