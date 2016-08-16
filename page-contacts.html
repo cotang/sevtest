@@ -121,6 +121,9 @@
     <div class="row  page-header__line">
       <div class="col-xs-8">
           <nav class="page-header__nav  nav">
+            <div class="nav__hamburger">
+              <a href="#" class="hamburger"><span></span></a>
+            </div>            
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link  nav__link--active" href="index.html">О компании</a></li>
               <li class="nav__item"><a class="nav__link" href="page-news.html">Новости</a></li>
@@ -431,24 +434,24 @@
   <h3 class="form-application__title">Оставить заявку</h3>
   <div class="form-application__input-wrapper required has-error">
     <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper has-success">    
     <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success">
     <input class="form-application__input" type="email" name="Email" placeholder="Email*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>    
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>    
   </div>
   <div class="form-application__input-wrapper required has-success">
     <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success">
     <div class="form-application__country">
       <input class="form-application__input" type="text" name="Страна" placeholder="Страна*">
-      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
       <ul class="form-application__country-list">
         <li class="bold">Россия</li>
         <li class="bold">Беларусь</li>
@@ -468,7 +471,7 @@
   <div class="form-application__input-wrapper required has-success">  
     <div class="form-application__region">
       <input class="form-application__input" type="text" name="Регион" placeholder="Регион*">
-      <p class="help-block  help-block-error">Ошибка!!!</p>      
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>      
       <ul class="form-application__region-list">
         <li>Санкт-Петербург и Ленинградская область</li>
         <li>Москва и Московская область</li>
@@ -484,6 +487,7 @@
   </div>
   <div class="form-application__captcha"></div>
   <button class="form-application__btn" type="submit">Заказать документ</button>
+  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
 </form>
 
   </div>
@@ -494,23 +498,23 @@
 
     <form id="form-question" class="form-question" action="">
   <a class="form-question__close" href="#">Закрыть</a>
-  <h3 class="form-question__title">Оставить заявку</h3>
+  <h3 class="form-question__title">Задать вопрос</h3>
   <div class="form-question__input-wrapper required has-success"> 
     <input class="form-question__input" type="text" name="Имя" placeholder="Имя*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-question__input-wrapper has-success"> 
     <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-question__input-wrapper required has-error"> 
     <input class="form-question__input" type="email" name="Email" placeholder="Email*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-question__input-wrapper required has-success"> 
     <div class="form-question__country">
       <input class="form-question__input" type="text" name="Страна" placeholder="Страна*">
-      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
       <ul class="form-question__country-list">
         <li class="bold">Россия</li>
         <li class="bold">Беларусь</li>
@@ -530,7 +534,7 @@
   <div class="form-question__input-wrapper required has-success"> 
     <div class="form-question__region">
       <input class="form-question__input" type="text" name="Регион" placeholder="Регион*">
-      <p class="help-block  help-block-error">Ошибка!!!</p>
+      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
       <ul class="form-question__region-list">
         <li>Санкт-Петербург и Ленинградская область</li>
         <li>Москва и Московская область</li>
@@ -546,10 +550,11 @@
   </div>
   <div class="form-question__textarea-wrapper required has-success"> 
     <textarea class="form-question__textarea" name="Вопрос" placeholder="Ваш вопрос*"></textarea>
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>    
   <div class="form-question__captcha"></div>
   <button class="form-question__btn" type="submit">Спросить</button>
+  <p class="help-block  help-block-success">Ваш вопрос отправлен</p>
 </form>
 
   </div>
