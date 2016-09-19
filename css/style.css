@@ -4880,10 +4880,6 @@ img {
 	text-transform: uppercase;
 }
 
-.form-application__input-wrapper {
-	margin-bottom: 15px;
-}
-
 .form-application__input {
 	width: 100%;
 	padding: 15px 20px;
@@ -4924,72 +4920,20 @@ img {
 	color: transparent;
 }
 
-.form-application__country {
-	position: relative;
-}
-
 .form-application__country-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-application__country-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-application__country-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-application__country-list li:before {
-	content: "";
-}
-
-.form-application__region {
-	position: relative;
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-application__region-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-application__region-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-application__region-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-application__region-list li:before {
-	content: "";
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-application__captcha {
@@ -5053,10 +4997,6 @@ img {
 	text-transform: uppercase;
 }
 
-.form-question__input-wrapper {
-	margin-bottom: 15px;
-}
-
 .form-question__input {
 	width: 100%;
 	padding: 15px 20px;
@@ -5097,76 +5037,20 @@ img {
 	color: transparent;
 }
 
-.form-question__country {
-	position: relative;
-}
-
 .form-question__country-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-question__country-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-question__country-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-question__country-list li:before {
-	content: "";
-}
-
-.form-question__region {
-	position: relative;
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-question__region-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-question__region-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-question__region-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-question__region-list li:before {
-	content: "";
-}
-
-.form-question__textarea-wrapper {
-	margin-bottom: 15px;
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-question__textarea {
@@ -5271,25 +5155,12 @@ img {
 	text-transform: uppercase;
 }
 
-.form-call__input-wrapper {
-	margin-bottom: 15px;
-}
-
 .form-call__input {
 	width: 100%;
 	padding: 15px 20px;
 	border: 2px solid gray;
 	font-weight: 700;
 	background-color: #fff;
-}
-
-.form-call__input--time {
-	margin-left: 5px;
-	margin-right: 5px;
-	display: inline-block;
-	vertical-align: baseline;
-	padding: 15px 10px;
-	max-width: 100px;
 }
 
 .form-call__input::-webkit-input-placeholder {
@@ -5324,94 +5195,20 @@ img {
 	color: transparent;
 }
 
-.form-call__time {
-	margin-bottom: 15px;
-	text-align: left;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-align-items: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline;
-}
-
-.form-call__time-text {
-	font-weight: 700;
-	padding-left: 20px;
-}
-
-.form-call__country {
-	position: relative;
-}
-
 .form-call__country-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-call__country-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-call__country-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-call__country-list li:before {
-	content: "";
-}
-
-.form-call__region {
-	position: relative;
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-call__region-list {
-	display: none;
-	padding-left: 0;
-	margin: 0;
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 0;
-	background: #fff;
-	border: 2px solid gray;
 	width: 100%;
-	height: 250px;
-	overflow-y: scroll;
-}
-
-.form-call__region-list li {
-	cursor: pointer;
-	border-bottom: 1px solid gray;
-	padding: 10px 0;
-}
-
-.form-call__region-list li:hover {
-	background-color: #323242;
-	color: #fff;
-}
-
-.form-call__region-list li:before {
-	content: "";
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 .form-call__captcha {
@@ -5477,10 +5274,6 @@ img {
 	text-transform: uppercase;
 }
 
-.form-review__input-wrapper {
-	margin-bottom: 15px;
-}
-
 .form-review__input {
 	width: 100%;
 	padding: 15px 20px;
@@ -5519,10 +5312,6 @@ img {
 
 .form-review__input:focus::placeholder {
 	color: transparent;
-}
-
-.form-review__textarea-wrapper {
-	margin-bottom: 15px;
 }
 
 .form-review__textarea {
@@ -5604,8 +5393,16 @@ img {
 	border: 2px solid #d9534f;
 }
 
+.has-error .help-block {
+	display: block;
+}
+
 .help-block {
 	display: none;
+}
+
+.form-group {
+	margin-bottom: 15px;
 }
 
 /*
@@ -6265,15 +6062,6 @@ img {
 
 .page-footer__nav {
 	padding-top: 80px;
-}
-
-.form-call__input-wrapper {
-	width: 100%;
-}
-
-.form-call__time-text {
-	width: 100%;
-	margin-bottom: 15px;
 }
 
 }
