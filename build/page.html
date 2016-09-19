@@ -360,62 +360,58 @@
     <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
-  <div class="form-application__input-wrapper required has-error">
+  <div class="form-group required has-error">
     <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-application__input-wrapper has-success">    
+  <div class="form-group has-success">    
     <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-application__input-wrapper required has-success">
+  <div class="form-group required has-success">
     <input class="form-application__input" type="email" name="Email" placeholder="Email*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>    
   </div>
-  <div class="form-application__input-wrapper required has-success">
+  <div class="form-group required has-success">
     <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-application__input-wrapper required has-success">
-    <div class="form-application__country">
-      <input class="form-application__input" type="text" name="Страна" placeholder="Страна*">
-      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
-      <ul class="form-application__country-list">
-        <li class="bold">Россия</li>
-        <li class="bold">Беларусь</li>
-        <li class="bold">Казахстан</li> 
-        <li>Украина</li>
-        <li>Азербайджан</li>
-        <li>Армения</li>    
-        <li>Грузия</li>
-        <li>Молдавия</li>
-        <li>Узбекистан</li>  
-        <li>Киргизия</li>
-        <li>Таджикистан</li>
-        <li>Туркменистан</li> 
-      </ul> 
-    </div>
+  <div class="form-group required">
+    <select class="form-application__country-list">
+      <option>Россия</option>
+      <option>Беларусь</option>
+      <option>Казахстан</option> 
+      <option>Украина</option>
+      <option>Азербайджан</option>
+      <option>Армения</option>    
+      <option>Грузия</option>
+      <option>Молдавия</option>
+      <option>Узбекистан</option>  
+      <option>Киргизия</option>
+      <option>Таджикистан</option>
+      <option>Туркменистан</option> 
+    </select> 
   </div>
-  <div class="form-application__input-wrapper required has-success">  
-    <div class="form-application__region">
-      <input class="form-application__input" type="text" name="Регион" placeholder="Регион*">
-      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>      
-      <ul class="form-application__region-list">
-        <li>Санкт-Петербург и Ленинградская область</li>
-        <li>Москва и Московская область</li>
-        <li>Новгородская область</li> 
-        <li>Псковская область</li>
-        <li>Республика Карелия</li>
-        <li>Мурманская область</li>    
-        <li>Калининградская область</li>
-        <li>Вологодская область</li>
-        <li>Тверская область</li>
-      </ul> 
-    </div>
+  <div class="form-group required">  
+    <select class="form-application__region-list">
+      <option>Санкт-Петербург и Ленинградская область</option>
+      <option>Москва и Московская область</option>
+      <option>Новгородская область</option> 
+      <option>Псковская область</option>
+      <option>Республика Карелия</option>
+      <option>Мурманская область</option>    
+      <option>Калининградская область</option>
+      <option>Вологодская область</option>
+      <option>Тверская область</option>
+    </select> 
   </div>
-  <div class="form-application__captcha"></div>
-  <button class="form-application__btn" type="submit">Заказать документ</button>
-  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
+  <div class="form-group required">
+    <div class="form-application__captcha"></div>
+  </div>
+  <div class="form-group">
+    <button class="form-application__btn" type="submit">Заказать документ</button>
+    <p class="help-block  help-block-success">Ваша заявка отправлена</p>
+  </div>
 </form>
 
   </div>
@@ -427,62 +423,58 @@
     <form id="form-question" class="form-question" action="">
   <a class="form-question__close" href="#">Закрыть</a>
   <h3 class="form-question__title">Задать вопрос</h3>
-  <div class="form-question__input-wrapper required has-success"> 
+  <div class="form-group required has-success"> 
     <input class="form-question__input" type="text" name="Имя" placeholder="Имя*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-question__input-wrapper has-success"> 
+  <div class="form-group has-success"> 
     <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-question__input-wrapper required has-error"> 
+  <div class="form-group required has-error"> 
     <input class="form-question__input" type="email" name="Email" placeholder="Email*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-question__input-wrapper required has-success"> 
-    <div class="form-question__country">
-      <input class="form-question__input" type="text" name="Страна" placeholder="Страна*">
-      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
-      <ul class="form-question__country-list">
-        <li class="bold">Россия</li>
-        <li class="bold">Беларусь</li>
-        <li class="bold">Казахстан</li> 
-        <li>Украина</li>
-        <li>Азербайджан</li>
-        <li>Армения</li>    
-        <li>Грузия</li>
-        <li>Молдавия</li>
-        <li>Узбекистан</li>  
-        <li>Киргизия</li>
-        <li>Таджикистан</li>
-        <li>Туркменистан</li> 
-      </ul> 
-    </div>
+  <div class="form-group required"> 
+    <select class="form-question__country-list">
+      <option>Россия</option>
+      <option>Беларусь</option>
+      <option>Казахстан</option> 
+      <option>Украина</option>
+      <option>Азербайджан</option>
+      <option>Армения</option>    
+      <option>Грузия</option>
+      <option>Молдавия</option>
+      <option>Узбекистан</option>  
+      <option>Киргизия</option>
+      <option>Таджикистан</option>
+      <option>Туркменистан</option> 
+    </select> 
   </div>
-  <div class="form-question__input-wrapper required has-success"> 
-    <div class="form-question__region">
-      <input class="form-question__input" type="text" name="Регион" placeholder="Регион*">
-      <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
-      <ul class="form-question__region-list">
-        <li>Санкт-Петербург и Ленинградская область</li>
-        <li>Москва и Московская область</li>
-        <li>Новгородская область</li> 
-        <li>Псковская область</li>
-        <li>Республика Карелия</li>
-        <li>Мурманская область</li>    
-        <li>Калининградская область</li>
-        <li>Вологодская область</li>
-        <li>Тверская область</li>
-      </ul> 
-    </div>
+  <div class="form-group required"> 
+    <select class="form-question__region-list">
+      <option>Санкт-Петербург и Ленинградская область</option>
+      <option>Москва и Московская область</option>
+      <option>Новгородская область</option> 
+      <option>Псковская область</option>
+      <option>Республика Карелия</option>
+      <option>Мурманская область</option>    
+      <option>Калининградская область</option>
+      <option>Вологодская область</option>
+      <option>Тверская область</option>
+    </select> 
   </div>
-  <div class="form-question__textarea-wrapper required has-success"> 
+  <div class="form-group required"> 
     <textarea class="form-question__textarea" name="Вопрос" placeholder="Ваш вопрос*"></textarea>
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
-  </div>    
-  <div class="form-question__captcha"></div>
-  <button class="form-question__btn" type="submit">Спросить</button>
-  <p class="help-block  help-block-success">Ваш вопрос отправлен</p>
+  </div>
+  <div class="form-group required"> 
+    <div class="form-question__captcha"></div>
+  </div>
+  <div class="form-group required"> 
+    <button class="form-question__btn" type="submit">Спросить</button>
+    <p class="help-block  help-block-success">Ваш вопрос отправлен</p>
+  </div>
 </form>
 
   </div>

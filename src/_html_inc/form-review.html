@@ -1,19 +1,23 @@
 <form id="form-review" class="form-review" action="">
   <a class="form-review__close" href="#">Закрыть</a>
   <h3 class="form-review__title">Оставить отзыв о центре Севтест</h3>
-  <div class="form-review__input-wrapper required has-success"> 
+  <div class="form-group required has-error"> 
     <input class="form-review__input" type="text" name="Компания" placeholder="Ваша Компания*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-review__textarea-wrapper required has-success"> 
+  <div class="form-group required has-success"> 
     <textarea class="form-review__textarea" name="Отзыв" placeholder="Ваш отзыв*"></textarea>
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
-  <div class="form-review__input-wrapper required has-success"> 
+  <div class="form-group required"> 
     <input class="form-review__input" type="email" name="Email" placeholder="Email*">
     <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
-  </div>    
-  <div class="form-review__captcha"></div>
-  <button class="form-review__btn" type="submit">Оставить отзыв</button>
-  <p class="help-block  help-block-success">Ваш отзыв отправлен</p>
+  </div> 
+  <div class="form-group required"> 
+    <div class="form-review__captcha"></div>
+  </div> 
+  <div class="form-group required"> 
+    <button class="form-review__btn" type="submit">Оставить отзыв</button>
+    <p class="help-block  help-block-success">Ваш отзыв отправлен</p>
+  </div> 
 </form>
