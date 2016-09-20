@@ -4920,22 +4920,6 @@ img {
 	color: transparent;
 }
 
-.form-application__country-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
-}
-
-.form-application__region-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
-}
-
 .form-application__captcha {
 	text-align: center;
 	max-width: 240px;
@@ -5035,22 +5019,6 @@ img {
 
 .form-question__input:focus::placeholder {
 	color: transparent;
-}
-
-.form-question__country-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
-}
-
-.form-question__region-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
 }
 
 .form-question__textarea {
@@ -5193,22 +5161,6 @@ img {
 
 .form-call__input:focus::placeholder {
 	color: transparent;
-}
-
-.form-call__country-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
-}
-
-.form-call__region-list {
-	width: 100%;
-	padding: 15px 20px;
-	border: 2px solid gray;
-	font-weight: 700;
-	background-color: #fff;
 }
 
 .form-call__captcha {
@@ -5403,6 +5355,14 @@ img {
 
 .form-group {
 	margin-bottom: 15px;
+}
+
+.form-list {
+	width: 100%;
+	padding: 15px 20px;
+	border: 2px solid gray;
+	font-weight: 700;
+	background-color: #fff;
 }
 
 /*
