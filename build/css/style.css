@@ -3313,6 +3313,10 @@ a:focus {
 	text-decoration: underline;
 }
 
+a:visited {
+	color: gray;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
