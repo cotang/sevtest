@@ -193,3 +193,30 @@
 		text-decoration: underline;
 	}
 }
+
+.search{
+	margin-top: 20px;
+	label{
+		position: relative;
+
+		input{
+			border: none;
+			outline: none;
+			border-bottom: 1px solid @text-gray; // fade(@text-gray, 50%);
+			width: 250px;
+
+			&:focus::-webkit-input-placeholder{
+				color: transparent;					
+			}				
+			&:focus::placeholder{
+				color: transparent;					
+			}
+			
+		}
+		i{
+			position: absolute;
+			right: 0;
+			opacity: 0.5;
+		}
+	}
+}

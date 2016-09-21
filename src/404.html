@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Страница</title>
+<meta name="description" content="">
+@@include('_html_inc/page_head.html')
+</head>
+
+<body>
+
+@@include('_html_inc/page_header.html')
+
+<div class="container">
+    <div class="row">
+      	<div class="col-xs-8  col-sm-3  col-md-2">
+
+			@@include('_html_inc/page_sidebar.html')
+
+        </div>
+
+        <div class="col-xs-8  col-sm-5  col-md-6">
+            <main class="main  page">				
+
+				<section class="breadcrumbs">
+					<a href="index.html">Севтест - центр по сертификации</a>&gt;<span>Ошибка 404</span>
+				</section>
+				<h1 class="page__title">Ошибка 404</h1>
+				<div class="page__content">
+					<p>Доброго времени!</p>
+					<p>К сожалению, на этой страничке нашего сайта пока ничего не написали.</p>
+                    <p>Вы уверены, что хотели попасть именно сюда?</p>
+                    <p>Если нет – то давайте поищем правильный адрес!</p>
+				</div>							
+                <div class="search">
+                    <form action="">
+                        <label>
+                            <input type="text" placeholder="Поиск">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                    </form>
+                </div>            
+            </main>
+        </div>      
+    </div>
+</div>    
+
+
+
+@@include('_html_inc/page_footer.html')
+@@include('_html_inc/page_bottom.html')
+
+</body>
+</html>

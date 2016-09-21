@@ -4847,6 +4847,43 @@ img {
 	text-decoration: underline;
 }
 
+.search {
+	margin-top: 20px;
+}
+
+.search label {
+	position: relative;
+}
+
+.search label input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	width: 250px;
+}
+
+.search label input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.search label input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.search label input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.search label input:focus::placeholder {
+	color: transparent;
+}
+
+.search label i {
+	position: absolute;
+	right: 0;
+	opacity: 0.5;
+}
+
 .form-application {
 	text-align: center;
 	margin: 0 auto;
