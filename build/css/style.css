@@ -4678,6 +4678,10 @@ img {
 	opacity: 1;
 }
 
+.page__content a {
+	font-weight: 600;
+}
+
 .breadcrumbs {
 	font-size: 0.8em;
 	color: gray;
