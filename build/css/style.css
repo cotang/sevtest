@@ -4765,6 +4765,10 @@ img {
 	font-weight: 700;
 }
 
+.item__content a {
+	font-weight: 600;
+}
+
 .review {
 	padding-top: 10px;
 	padding-bottom: 25px;
@@ -4794,6 +4798,10 @@ img {
 .faq__title {
 	color: gray;
 	font-size: 18px;
+}
+
+.faq__content a {
+	font-weight: 600;
 }
 
 .office {
