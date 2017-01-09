@@ -14,6 +14,9 @@
 	        padding-bottom: 10px;
 	    }		
 		&--first{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 			padding-bottom: 15px;
 			&:after{
 				content: '';
@@ -30,36 +33,66 @@
 		}		
 	}
 
-	&__social{
-		margin-left: 20px;
-		i{
-			margin-right: 5px;
-			cursor: pointer;
-			opacity: 0.5;
-			transition: all 0.325s ease;
-			&:hover{
-				opacity: 1;
-			}
-		}
+	&__flags{
+		text-align: left;
+		margin-top: 5px;
+		padding: 0 10px;
 	    @media only screen and (max-width:  @screen-lg-max) {
-	        margin-bottom: 10px;
+	        text-align: center;
+	        flex: 0 0 100%;
 	    }		
 	}
+	&__flag-item{
+		width: 26px;
+		height: 16px;
+		display: inline-block;
+		vertical-align: top;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: .5;
+		&:hover{
+			opacity: 1;
+		}
+		&--active{
+			opacity: 1;
+		}
+		&--rus{
+			background-image: url(../img/rus.png);
+		}
+		&--eng{
+			background-image: url(../img/eng.png);
+		}		
+	}
+	&__rss{
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		display: inline-block;
+		vertical-align: top;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../img/rss.png);	
+	}
 	&__shipping{
-
+		padding: 0 10px;
+		flex: 0 0 25%;
 	    @media only screen and (max-width:  @screen-lg-max) {
-	        margin-left: 0;
-	        margin-bottom: 10px;
+	        margin: 10px 0;
+	        flex: 0 0 100%;
 	    }
 	    @media only screen and (max-width:  @screen-sm-max) {
 			font-size: @font-size-small;
 	    }	    		
 	}
-
 	&__address{
+		padding: 0 10px;
+		flex: 0 0 50%;
 	    @media only screen and (max-width:  @screen-lg-max) {
 	        padding: 0 50px;
 	        margin-bottom: 20px;
+	        flex: 0 0 100%;
 	    }			
 	    @media only screen and (max-width:  @screen-sm-max) {
 	        display: flex;
@@ -89,35 +122,23 @@
 	&__city{
 		min-width: 140px;
 	}	
-	&__flags{
-		text-align: left;
-		margin-top: 5px;
+	&__social{
+		margin: 7px 10px 0;
+		i{
+			font-size: 24px;
+			margin-right: 7px;
+			cursor: pointer;
+			// opacity: 0.5;
+			transition: all 0.325s ease;
+			// &:hover{
+			// 	opacity: 1;
+			// }
+		}
 	    @media only screen and (max-width:  @screen-lg-max) {
-	        text-align: center;
+	        margin-bottom: 10px;
+	        flex: 0 0 100%;
 	    }		
 	}
-	&__flag-item{
-		width: 36px;
-		height: 26px;
-		margin-left: 5px;
-		display: inline-block;
-		vertical-align: top;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		&--rss{
-			width: 26px;
-			background-image: url(../img/rss.png);
-		}
-
-		&:nth-child(2){
-			background-image: url(../img/rus.png);
-		}
-		&:nth-child(3){
-			background-image: url(../img/eng.png);
-		}		
-	}
-
 
 	&__logo{
 		display: block;
@@ -176,6 +197,18 @@
 }
 
 .nav{
+	&__hamburger{
+	    display: none;
+	    @media only screen and (max-width:  @screen-sm-max) {
+			display: block;
+	    }
+	}
+	&__wrapper{
+		display: block;
+	    @media only screen and (max-width:  @screen-sm-max) {
+			display: none;
+	    }
+	}
 	&__list{
 		padding-left: 0;
 		margin: 0;
@@ -213,9 +246,6 @@
 	&__link--active{
 		text-decoration: underline;
 		font-weight: 700;
-	}
-	&__hamburger{
-	    display: none;
 	}	
 }
 .hamburger{

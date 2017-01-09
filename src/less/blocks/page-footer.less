@@ -1,24 +1,37 @@
 .footer-buttons{
-	position: fixed;
-	bottom: auto;
-	left: 0;
-	right: 0;
-	z-index: 5;
+	&--hidden{
+		display: none;
+	}
+	&--sticky{
+		display: block;
+		position: fixed;
+		z-index: 5;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		.footer-buttons__wrapper{
+			background-color: transparent;			
+		}
+	}
+	&--static{
+		position: static;
+	}
 
 	.container{
 		background-color: transparent;		
 	}		
 	&__wrapper{
+		background-color: @bg-footer;
 		display: flex;
 		justify-content: space-between;
-		padding: 0 70px;
+		padding: 30px 70px 0;
 	    @media only screen and (max-width:  @screen-sm-max) {
 			
 	    }		
 	}
 	&__button{
 		display: inline-block;
-		background-color: @red;
+		background-color: #373736;
 		font-weight: 500;
 		border: none;
 		outline: none;		
@@ -48,11 +61,12 @@
 		background-color: @bg-footer;
 		padding-right: 70px;
 		padding-left: 70px;			
-		padding-top: 100px;
+		padding-top: 30px;
 		font-size: @font-size;
-	    @media only screen and (max-width:  @screen-lg-max) {
-	        padding-top: 80px;
-	    }		
+	    @media only screen and (max-width:  @screen-sm-max) {
+	        padding-left: 0;
+	        padding-right: 0;
+	    }
 		.nav__list{
 			width: 100% !important;
 			justify-content: space-between;
@@ -65,6 +79,7 @@
 		padding-left: 70px;	
 		padding-top: 15px;						
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	    @media only screen and (max-width:  @screen-sm-max) {
 	        display: block;
@@ -76,6 +91,7 @@
 	    }		    	
 	}
 	&__address{
+		flex: 0 0 50%;
 		span{
 			padding-top: 5px;
 			display: inline-block;

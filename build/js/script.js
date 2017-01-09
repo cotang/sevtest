@@ -2672,14 +2672,17 @@
 $(document).ready(function(){
 
     /* Hamburger */
-    if ($(window).width() < 767) {
-        $('.nav__hamburger').show();
-        $('.nav__list').hide(); 
-        $('.hamburger').click(function(e){
-            e.preventDefault();
-            $('.nav__list').toggle();
-        });               
-    }
+    $('.hamburger').click(function(e){
+        e.preventDefault();
+        $('.nav__wrapper').toggle();
+    });
+    $(window).resize(function(){
+      if ($(window).width() > 768) {
+        $('.nav__wrapper').show();
+      } else {
+        $('.nav__wrapper').hide();
+      }
+    });
 
     /* галерея благодарственных отзывов */
     $('#mails__gallery').slick({
@@ -2709,26 +2712,28 @@ $(document).ready(function(){
         return false;
     });
 
-    /* три красные кнопки, прилипание - скорректировать! */
-    var lastScreen = $(document).height() - $(window).height();
-    var buttonsPosition = lastScreen - (20 + 42);
+    /* три кнопки в футере */
+  // $( window ).resize(function() {
     var buttons = $('.footer-buttons');
-    function scroll() {
-        if ($(window).scrollTop() >= buttonsPosition) {
-              if ($(window).width() <= 768) {
-                buttons.animate({"bottom": "390px"}, 100);
-              } else if ($(window).width() <= 1024) {                
-                buttons.animate({"bottom": "210px"}, 100);
-              } else {
-                buttons.animate({"bottom": "140px"}, 100);
-              };
-        } else if ($(window).scrollTop() >= 50) {
-            buttons.animate({"bottom": "0"}, 100);
+    var footerHeight = $('.page-footer').outerHeight();
+    var buttonsHeight = $(buttons).outerHeight();
+    var documentBottom = $(document).height() - $(window).height() - footerHeight + buttonsHeight;
+    $(window).scroll(function () {
+      console.log($(this).scrollTop()) 
+      if ($(window).width() > 1024) {
+        if ($(this).scrollTop() >= documentBottom ) {
+          $(buttons).removeClass('footer-buttons--sticky');
+          $(buttons).addClass('footer-buttons--static');        
+        } else if ($(this).scrollTop() > 0 ) {
+          $(buttons).removeClass('footer-buttons--static footer-buttons--hidden');
+          $(buttons).addClass('footer-buttons--sticky');
         } else {
-            buttons.css("bottom", "auto");
+          $(buttons).removeClass('footer-buttons--sticky');
+          $(buttons).addClass('footer-buttons--hidden');
         }
-    }
-    document.onscroll = scroll;
+      }
+    });
+  // });
 
 });
 
