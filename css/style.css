@@ -3697,6 +3697,7 @@ img {
 }
 
 .page-header__line {
+	position: relative;
 	padding-bottom: 30px;
 }
 
@@ -3814,11 +3815,7 @@ img {
 .page-header__logo {
 	display: block;
 	margin-bottom: 15px;
-}
-
-.page-header__other-cities select {
-	border: none;
-	width: 220px;
+	margin-right: auto;
 }
 
 .page-header__search label {
@@ -3854,8 +3851,22 @@ img {
 	opacity: 0.5;
 }
 
+.page-header__other-cities {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 30px;
+	text-align: right;
+	font-size: 13px;
+}
+
 .page-header__nav {
 	margin-bottom: 15px;
+}
+
+.other-cities select {
+	border: none;
+	width: 220px;
 }
 
 .nav__hamburger {
@@ -6179,7 +6190,7 @@ img {
 	flex: 0 0 100%;
 }
 
-.page-header__other-cities {
+.other-cities {
 	margin-bottom: 20px;
 }
 
@@ -6258,7 +6269,7 @@ img {
 	margin-bottom: 20px;
 }
 
-.page-header__other-cities {
+.other-cities {
 	font-size: 13px;
 }
 
