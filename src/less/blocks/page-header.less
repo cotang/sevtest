@@ -9,6 +9,7 @@
 		z-index: 2;
 	}
 	&__line{
+		position: relative;
 		padding-bottom: 30px;
 	    @media only screen and (max-width:  @screen-md-max) {
 	        padding-bottom: 10px;
@@ -102,8 +103,7 @@
 	&__address-item{
 		text-align: left;
 		display: flex;
-		justify-content: space-between;	
-
+		justify-content: space-between;
 
 	    @media only screen and (max-width:  @screen-lg-max) {
 	        text-align: center;
@@ -139,10 +139,10 @@
 	        flex: 0 0 100%;
 	    }		
 	}
-
 	&__logo{
 		display: block;
 		margin-bottom: 15px;
+		margin-right: auto;
 
 	    @media only screen and (max-width:  @screen-sm-max) {
 			padding-right: 15px;
@@ -151,18 +151,6 @@
 			margin-bottom: 20px;
 	    }		
 	}	
-	&__other-cities{
-		select{
-			border: none;
-			width: 220px;
-		}
-	    @media only screen and (max-width:  @screen-lg-max) {
-	        margin-bottom: 20px;
-	    }		
-	    @media only screen and (max-width:  @screen-sm-max) {
-			font-size: @font-size-small;
-	    }		
-	}
 	&__search{
 		label{
 			position: relative;
@@ -178,8 +166,7 @@
 				}				
 				&:focus::placeholder{
 					color: transparent;					
-				}
-				
+				}				
 			}
 			i{
 				position: absolute;
@@ -188,12 +175,36 @@
 			}
 		}
 	}
+	&__other-cities{
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-right: 30px;
+		text-align: right;
+		// left: 0;
+		// text-align: left;
+		// padding-left: 30px;
+		font-size: @font-size-small;
+	}
 	&__nav{
 		margin-bottom: 15px;
 	    @media only screen and (max-width:  @screen-md-max) {
 	        margin-bottom: 0;
 	    }		
 	}	
+}
+
+.other-cities{
+	select{
+		border: none;
+		width: 220px;
+	}
+    @media only screen and (max-width:  @screen-lg-max) {
+        margin-bottom: 20px;
+    }		
+    @media only screen and (max-width:  @screen-sm-max) {
+		font-size: @font-size-small;
+    }		
 }
 
 .nav{
